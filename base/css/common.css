@@ -1,0 +1,68 @@
+@charset "utf-8";
+
+@font-face {font-family: "iconfont";
+    src: url('../iconfont/iconfont.eot'); /* IE9*/
+    src: url('../iconfont/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../iconfont/iconfont.woff') format('woff'), /* chrome、firefox */
+    url('../iconfont/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('../iconfont/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+    font-family:"iconfont" !important;
+    font-size:20px;
+    font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+.icon-Z-shangmenliangfang:before { content: "\e702"; }
+.icon-Z-anzhuanggongchengyanshou:before { content: "\e704"; }
+.icon-Z-huanbaozhili:before { content: "\e705"; }
+.icon-Z-baojiashenhe:before { content: "\e706"; }
+.icon-Z-fangshuigongchengyanshou:before { content: "\e707"; }
+.icon-Z-diyicihuanbaojiance:before { content: "\e708"; }
+.icon-Z-huanbaozhilifuce:before { content: "\e709"; }
+.icon-Z-diercihuanbaojiance:before { content: "\e70a"; }
+.icon-Z-jungongyanshou:before { content: "\e70b"; }
+.icon-Z-shuidiancailiaoyanshou:before { content: "\e70c"; }
+.icon-Z-qiandingyixiangdingjin:before { content: "\e70d"; }
+.icon-Z-qiandingsanfanghetong:before { content: "\e70e"; }
+.icon-Z-kaigongyishi:before { content: "\e70f"; }
+.icon-Z-wamugongchengyanshou:before { content: "\e710"; }
+.icon-Z-wamucailiaoyanshou:before { content: "\e711"; }
+.icon-Z-shuidiangongchengyanshou:before { content: "\e712"; }
+.icon-Z-youqicailiaoyanshou:before { content: "\e713"; }
+.icon-Z-youqigongchengyanshou:before { content: "\e714"; }
+.icon-Z-yujiaodi:before { content: "\e715"; }
+.icon-Z-weibao:before { content: "\e716"; }
+.icon-Z-duihao:before { content: "\e6aa"; }
+.icon-Z-star_two:before { content: "\e60d"; }
+.icon-Z-star_one:before { content: "\e612"; }
+
+/*基础定义*/
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.clearfix:after
+{
+    visibility:hidden;
+    display:block;
+    font-size:0;
+    content:" ";
+    clear:both;
+    height:0;
+}
+.clearfix
+{
+    zoom:1;
+}
+.wrapper1220{
+    width:1220px;
+    margin:0 auto;
+}

@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link href="css/basev2.css" rel="stylesheet" type="text/css">
+<link href="css/top_new.css" rel="stylesheet" type="text/css">
+<title>新头 2016-07-28</title>
+</head>
+
+<body>
+<!-- top S -->
+<div class="top">
+	<div class="wrap1220 fix">
+    	<a href="#"><img src="img/logo.png" width="313" height="52" class="logo" alt="优装美家" ></a>
+        <div id="choose-citys" class="city">
+      <div id="current-city">北京</div>
+      <cite class="icon"></cite>
+      <!--choose city start-->
+      <div class="citys-layer">
+        <ul class="city-list">
+          <li class="city current"> <img alt="北京" class="city-img" src="img/city_beijing.jpg">
+            <p class="city-name">北京</p>
+            <a class="img-link" href="" id="beijing"></a> </li>
+          <li class="city"> <img alt="天津" class="city-img" src="img/city_tianjin.jpg">
+            <p class="city-name">天津</p>
+            <a class="img-link" href="" id="tianjin"></a> </li>
+          <li class="city"> <img alt="深圳" class="city-img" src="img/city_shenzhen.jpg">
+            <p class="city-name">深圳</p>
+            <a class="img-link" href="" id="shenzhen"></a> </li>
+          <li class="city"> <img alt="广州" class="city-img" src="img/city_guangzhou.jpg">
+            <p class="city-name">广州</p>
+            <a class="img-link" href="" id="guangzhou"></a> </li>
+         <li class="city"> <img alt="上海" class="city-img" src="img/city_shanghai.jpg">
+            <p class="city-name">上海</p>
+            <a class="img-link" href="" id="shanghai"></a> </li>
+          <li class="city"> <img alt="西安" class="city-img" src="img/city_xian.jpg">
+            <p class="city-name">西安</p>
+            <a class="img-link" href="" id="xian"></a> </li>
+          <li class="city"> <img alt="杭州" class="city-img" src="img/city_hangzhou.jpg">
+            <p class="city-name">杭州</p>
+            <a class="img-link" href="" id="hangzhou"></a> </li>
+        <li class="city"> <img alt="南京" class="city-img" src="img/city_nanjing.jpg">
+            <p class="city-name">南京</p>
+            <a class="img-link" href="" id="nanjing"></a> </li>
+            <li class="city"> <img alt="武汉" class="city-img" src="img/city_wuhan.jpg">
+            <p class="city-name">武汉</p>
+            <a class="img-link" href="" id="wuhan"></a> </li>
+            <li class="city"> <img alt="郑州" class="city-img" src="img/city_zhengzhou.jpg">
+            <p class="city-name">郑州</p>
+            <a class="img-link" href="" id="zhengzhou"></a> </li>
+            <li class="city"> <img alt="成都" class="city-img" src="img/city_chengdu.jpg">
+            <p class="city-name">成都</p>
+            <a class="img-link" href="" id="chengdu"></a> </li>
+            
+        </ul>
+
+        <div class="arrow"></div>
+      </div>
+      <!--choose city end-->
+    </div>
+        <div class="menu">
+        	<ul>
+            	<li class="menuSel">
+                    <a href="#" target="_blank">装修管家</a>
+                    <dl>
+                        <dd>
+                            <a href="#" target="_blank">金牌管家</a>
+                            <cite class="icon"></cite>
+                        </dd>
+                        <dd><a href="#" target="_blank">装修管家</a></dd>
+                    </dl>
+
+                </li>
+                <li><a href="#" target="_blank">真实图库</a></li>
+                <li><a href="#" target="_blank">家居特卖</a></li>
+                <li><a href="#" target="_blank">装修公司</a></li>
+                <li class="menuSel">
+                    <a href="#">装修攻略</a>
+                    <dl>
+                    	<dd><a href="#" target="_blank">装修课堂</a></dd>
+                        <dd><a href="#" target="_blank">管家日志</a></dd>
+                        <dd><a href="#" target="_blank">装修问答</a></dd>
+                        <dd><a href="#" target="_blank">装修风水</a></dd>
+                    </dl>
+                
+                </li>
+            </ul>
+        </div>
+      <div class="imgTxt imgTxt01">
+                    <p class="pic" ><img src="img/xh_logo.jpg" width="60" height="60" alt="中国建筑装饰协会" ></p>
+                    <h4 class="h4">中国建筑装饰协会</h4>
+                    <p class="desc">深度战略合作伙伴</p>
+         </div>
+         <p class="txt"><a href="#" class="login">登录</a> | <a href="#">注册</a></p>
+         <p class="txt no"><a href="#" class="login">用户名</a> | <a href="#">退出</a></p>
+    </div>
+</div>
+<!-- top E -->
+<script src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript">
+$(function(){
+    //choose city
+    $('#choose-citys').bind('click',function(){
+        $('#choose-citys').addClass("slidedown");
+        setTimeout(function(){
+            $(document).bind('click',function(){
+                $('#choose-citys').removeClass("slidedown");
+                setTimeout(function(){
+                    $(document).unbind('click');
+                },1);
+            }); 
+        },1);
+    })
+   //
+	$('.top .menu .menuSel').hover(
+	function(){
+		$(this).addClass("menuHover");
+		},
+	function(){
+		$(this).removeClass("menuHover");
+		}
+	)
+	//
+	
+})
+</script>
+
+</body>
+</html>

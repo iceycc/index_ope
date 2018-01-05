@@ -1,0 +1,6 @@
+@charset "utf-8";
+/* wushi add 2016-7-29 E */
+.right_Entry{ width:201px; height:201px; background:url(../img/rightEntry.png) no-repeat;position: fixed; top:50%; margin-top:-100px; right: 0; z-index: 10; cursor:pointer}
+.right_Entry .close{ height:17px; width:17px; text-indent:-99999px; float:right; margin:7px 5px 0 0; display:inline;}
+.min_Entry{ width:30px; height:139px; padding:66px 0 0 30px; background:url(../img/min_Entry.png) no-repeat;position: fixed; top:50%; margin-top:-160px; right: -60px; z-index: 10; display:none; cursor:pointer; color:#eeed31; font:18px/26px "Microsoft YaHei";}
+

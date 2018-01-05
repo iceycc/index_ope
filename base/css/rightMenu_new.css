@@ -1,0 +1,115 @@
+@charset "utf-8";
+/* wushi add 2015-12-09 右侧悬浮 S */
+.rightMenu {
+	position: fixed;
+	top:inherit;
+	bottom:100px;
+	right: 0;
+	width: 36px;
+	height: 180px;
+	z-index: 10
+}
+.rightMenu .bottomMenu {
+	position: absolute;
+	bottom: 0
+}
+.rightMenu .bottomMenu li {
+	position: relative;
+	background: #fafafa;
+	border:solid 1px #f1f1f1;
+	border-right:none;
+	margin-top:3px;
+}
+.rightMenu .bottomMenu li .item {
+	background: url(../../base/img/rightMenu.png) no-repeat;
+	display: block;
+	width: 36px;
+	height: 36px;
+	cursor: pointer;
+	text-indent: -99999px
+}
+.rightMenu .bottomMenu .online-service .item {
+	background-position: -4px 4px
+}
+.rightMenu .bottomMenu .qrcode .item {
+	background-position: -3px -210px
+}
+.rightMenu .bottomMenu .feedback .item {
+	background-position: -3px -98px
+}
+.rightMenu .bottomMenu .backtop .item {
+	background-position: -3px -339px
+}
+
+.rightMenu .bottomMenu .online-service .item:hover {
+	background: #f60 url(../../base/img/rightMenu.png) no-repeat -4px -46px
+}
+.rightMenu .bottomMenu .qrcode .item:hover {
+	background: #f60 url(../../base/img/rightMenu.png) no-repeat -3px -280px
+}
+.rightMenu .bottomMenu .feedback .item:hover {
+	background: #f60 url(../../base/img/rightMenu.png) no-repeat -3px -148px
+}
+.rightMenu .bottomMenu .backtop .item:hover {
+	background: #f60 url(../../base/img/rightMenu.png) no-repeat -3px -399px
+}
+
+.rightMenu .bottomMenu li .alertDiv {
+	position: absolute;
+	right: 90px;
+	top: 0;
+	/*height: 547px;*/
+	font: 12px/34px "Microsoft YaHei";
+	/*padding-right: 6px;*/
+    border: 1px solid #0082ca;
+	display: none;
+	opacity: 0
+}
+.rightMenu .bottomMenu li .alertDiv.go-top {
+    height: 36px;
+    border: 0;
+}
+.rightMenu .bottomMenu li .alertDiv .icon {
+	width: 5px;
+	height: 9px;
+	overflow: hidden;
+	background: url(../../base/img/rightMenu.png) no-repeat -39px -459px;
+	float: right;
+	margin: -22px -5px 0 0
+}
+
+.rightMenu .bottomMenu .qrcode .alertDiv {
+	right: 96px;
+	/*top: -371px*/
+    top: -102px;
+}
+.rightMenu .bottomMenu .qrcode .picTxt {
+	/*box-shadow: 0 0 5px rgba(0,0,0,.4);*/
+	/*padding: 20px;*/
+	background-color: #fff;
+    z-index: 100;
+}
+.rightMenu .bottomMenu .qrcode .picTxt img{
+    padding-top: 5px;
+}
+.rightMenu .bottomMenu .qrcode .alertDiv .icon {
+	background-position: -39px -489px
+}
+.rightMenu .bottomMenu .backtop {
+	opacity: 0;
+	display: none
+}
+.rightMenu .bottomMenu .backtop-visible {
+	display: block;
+	opacity: 1
+}
+.rightMenu .bottomMenu li .alertDiv .alert-a {
+    color: #666;
+    display: block;
+    width: 90px;
+    background: #fafafa;
+    text-align: center;
+    border: solid 1px #f1f1f1;
+    border-right: none;
+}
+/* wushi add 2015-12-09 右侧悬浮 E */

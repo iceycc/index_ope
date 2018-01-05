@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link href="css/basev2.css" rel="stylesheet" type="text/css">
+<link href="css/alertDiv_new.css" rel="stylesheet" type="text/css">
+<title>alertDiv_new test</title>
+</head>
+
+<body style="background-color:transparent">
+<a href="#" class="open-alert">点击弹出</a>
+<!--reg layer start-->
+<div id="reg-layer" style="padding:0; width:360px;" class="hide">
+	<iframe name="main" src="alertDiv_new.html"  scrolling="no" style="width:360px; height:220px;" frameborder="0" allowTransparency="true"></iframe>
+</div>
+<!--reg layer end--> 
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/uz-alert.js"></script> 
+<script>
+//	$(function(){
+//		//alert test
+//		$(".open-alert").click(function(){uzAlert("reg-layer","10秒登记，免费获取全套装修管家服务")});
+//	})
+uzAlert("reg-layer","10秒登记，免费获取全套装修管家服务")
+</script>
+</body>
+</html>

@@ -1,0 +1,195 @@
+@charset "utf-8";
+/* xushu 2015-10-20 top-sort */
+.sort-top {
+	position: relative;
+	min-height: 160px;
+	border: 1px solid #ececec;
+	margin-bottom: 30px;
+}
+.sort-tab-nav {
+	padding-left: 16px;
+	height: 42px;
+	line-height: 42px;
+	background-color: #f7f7f7;
+	color: #666;
+}
+.sort-tab-nav a {
+	color: #666;
+}
+.sort-tab-nav .words1, .sort-tab-nav .gt {
+	float: left;
+}
+.sort-tab-nav .gt {
+	margin: 0 11px 0 8px;
+}
+.sort-tab-nav .nav-style {
+	float: left;
+	height: 20px;
+	margin: 10px 2px 0 0; /*zx 2015-10-28*/
+	line-height: 20px;
+	color: #78a0c4;
+	border: 1px solid #78a0c4;
+}
+.sort-tab-nav .nav-style span {
+	float: left;
+	padding: 0 3px;
+	margin-left: 4px;
+}
+.sort-tab-nav .nav-close {
+	display: inline-block;
+	width: 21px;
+	height: 20px;
+	font-size: 13px;
+    text-align: center;
+    line-height: 24px;
+}
+
+.sort-tab-nav .nav-style:hover .nav-close {
+	color: #fff;
+	background-color: #78a0c4;
+}
+.sort-tab-nav .clear-all {
+	float: right;
+	width: 83px;
+	height: 20px;
+	margin: 10px 15px 0 0;
+	line-height: 20px;
+	text-align: center;
+	color: #666;
+	border: 1px solid #c9c9c9;
+}
+.sort-tab-nav .clear-all:hover {
+	background-color: #e9e9e9;
+}
+.sort-options {
+	line-height: 37px;
+}
+.sort-opt-title {
+	float: left;
+	width: 85px;
+	height: 36px;
+	color: #666;
+	text-indent: 12px;
+	font-weight: 700;
+	letter-spacing: 1px;
+}
+.co-color .sort-opts .sort-opt-title {
+	padding-top: 0;
+	letter-spacing: -1.8px;
+}
+.color-all, .sort-opt {
+	margin-right: 15px;
+	padding: 5px 7px;
+	font-weight: 400;
+	color: #666;
+	white-space: nowrap;
+}
+.sort-options .sort-opt:hover {
+	color: #ff6600;
+}
+.sort-options .sort-opts .active {
+	background-color: #78a0c4;
+	color: #fff;
+	-webkit-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+.sort-opts {
+	position: relative;
+	float: left;
+	width: 1000px;
+	margin-left: 11px;
+	overflow: hidden;
+}
+.sort-options .fix {
+	position: relative;
+	margin: 0 10px;
+	border-bottom: 1px dashed #d7d7d7;
+}
+.sort-options .more {
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	top: 11px;
+	right: 10px;
+	cursor: pointer;
+	color: #bcbcbc;
+	font-size: 13px;
+	text-align: center;
+	border: 1px solid #dedede;
+	background-color: #f7f7f7;
+	line-height: 15px;
+	border-radius: 1px;
+	text-indent: 1px;
+}
+.sort-options .more:hover {
+	color: #666;
+}
+/* picture sort */
+.choose-tab {
+	height: 30px;
+	background-color: #f7f7f7;
+	border: 1px solid #f3f3f3;
+}
+.sort-pannel {
+	float: left;
+	height: 32px;
+}
+.sort-pannel .proper {
+	float: left;
+	padding: 0 11px;
+	font: 12px/30px "å®‹ä½“";
+}
+.sort-pannel .proper:hover {
+	background-color: #fff;
+}
+.sort-pannel .proper a {
+	color: #666;
+}
+.sort-pannel .popular a, .sort-pannel .new-pro a {
+	float: left;
+}
+.sort-pannel .active a {
+	color: #78a0c4;
+}
+.sort-pannel .active.popular {
+	background-color: #fff;
+	border-right: 1px solid #f3f3f3;
+}
+.sort-pannel .active.new-pro, .sort-pannel .active.defaults {
+	background-color: #fff;
+	border-right: 1px solid #f3f3f3;
+	border-left: 1px solid #f3f3f3;
+}
+.right-page {
+	float: right;
+}
+.right-page .page-num, .right-page .page-btn {
+	line-height: 32px;
+}
+.right-page .page-num {
+	float: left;
+	font: 12px/32px "Microsoft YaHei";
+}
+.right-page .page-btn {
+	float: right;
+	margin: 0 17px 0 32px;
+}
+.page-num .page1-col {
+	color: #78a0c4;
+}
+.page-btn .prev-page, .page-btn .next-page {
+    float: left;
+    width: 10px;
+    height: 18px;
+    cursor: pointer;
+    font-size: 20px;
+	color: #bcbcbc;
+}
+.page-btn .next-page {
+	margin-left: 32px;
+}
+.page-btn .prev-page:hover, .page-btn .next-page:hover {
+	color: #666666;
+}

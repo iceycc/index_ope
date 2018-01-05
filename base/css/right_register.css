@@ -1,0 +1,138 @@
+@charset "utf-8";
+/* Xushu 1020 Right */
+.apply-alert .tag_select, .apply-alert .tag_select_hover, .apply-alert .tag_select_open {
+	background: url(../../base/img/common.png) no-repeat
+}
+.apply-alert {
+	position: relative;
+	margin-top: 20px;
+	border: solid 1px #ececec;
+	text-align: center;
+	overflow: visible
+}
+.apply-alert .error-tips {
+	position: absolute;
+    left: 39px;
+    bottom: 55px;
+    font: normal 12px/30px normal;
+    color: #ff6600;
+}
+.error-tips .error {
+	position: relative;
+	top: 2px;
+	display: inline-block;
+	margin-right: 5px;
+	width: 12px;
+	height: 12px;
+	background: url(../img/input_error.jpg) no-repeat left top;
+}
+.apply-alert .hd .h3 {
+	margin: 4px 17px 0;
+	height: 46px;
+	font: 14px/46px "Microsoft YaHei";
+	color: #333;
+	border-bottom: solid 1px #78a0c4;
+	text-align: center
+}
+.apply-alert .bd input {
+	border: 0
+}
+.apply-alert .bd {
+	overflow: visible;
+	padding: 15px
+}
+.apply-alert .bd .txt {
+	overflow: hidden;
+	
+}
+.apply-alert .bd .txt input {
+	height: 38px;
+	line-height: 38px;
+	margin-top: 5px;
+	width: 224px;
+	color: #999;
+	overflow: hidden;
+	border: solid 1px #fafafa;
+	padding: 0 10px;
+	background: #fafafa;
+}
+.apply-alert .bd .txt input:focus {
+	border-color: #c8d2dd;
+	background: #fff;
+}
+.apply-alert .bd .txt input.wrong {
+	border-color: #ff6600;
+}
+.apply-alert .bd .sel {
+	margin: 10px 0 0 -10px;
+	zoom: 1
+}
+.apply-alert .bd .btn {
+	width: 246px;
+	height: 40px;
+	margin: 30px auto 0 auto;
+	font: 400 18px/40px "宋体";
+	color: #fff;
+	cursor: pointer;
+	background-color: #ff6600;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-ms-border-radius: 3px;
+	border-radius: 3px;
+	text-align: center
+}
+.apply-alert .select_box {
+	height: 38px;
+	line-height: 38px;
+	width: 113px;
+	float: left;
+	margin-left: 10px;
+	display: inline;
+	background: #fff;
+	text-align: left;
+	border-width: 0;
+	position: relative;
+}
+.apply-alert .tag_select, .apply-alert .tag_select_hover, .apply-alert .tag_select_open {
+	padding: 0 30px 0 10px;
+	height: 38px;
+	line-height: 38px;
+	overflow: hidden;
+	border: solid 1px #fafafa;
+	background-color: #fafafa;
+}
+.apply-alert .tag_options {
+	border: solid 1px #d2dee8;
+	border-top: none;
+	width: 91px;
+	background: #fff;
+	padding: 0 10px;
+	position: absolute;
+	left: 0;
+	top: 38px;
+	clear: both;
+	color: #ddd;
+	line-height: 20px;
+	max-height: 200px;
+	overflow-y: auto
+}
+.apply-alert .tag_select, .apply-alert .tag_select_hover {
+	background-position: -208px -510px
+}
+.apply-alert .tag_select_open {
+	background-position: -208px -541px;
+	border: solid 1px #c8d2dd;
+	background-color: #fff;
+}
+.apply-alert .tag_options li {
+	color: #ccc;
+	margin-bottom: 7px;
+	line-height: 18px
+}
+.apply-alert .tag_options li:hover {
+	color: #f60
+}
+#select_sel03 {
+	margin-left: 19px;
+}
+

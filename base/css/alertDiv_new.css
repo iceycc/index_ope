@@ -1,0 +1,296 @@
+/*#reg-layer  input */
+#aForm {
+    display: none;
+}
+
+#reg-layer .your-name input, #reg-layer .your-telephone input {
+    display: block;
+    width: 130px;
+    height: 36px;
+    line-height: 36px;
+    margin-right: 2px;
+    padding-left: 10px;
+    border: 1px solid #e1e2e4;
+}
+
+#reg-layer .sub {
+    width: 200px;
+    height: 38px;
+    font: 18px "Microsoft YaHei";
+    background-color: #ff6600;
+    color: #fff;
+    border: 0;
+    border-radius: 3px;
+    /*edite xushu 0916*/
+    cursor: pointer;
+}
+
+#reg-layer .mr2 {
+    margin-right: 2px;
+}
+
+#reg-layer .mr10 {
+    margin-right: 10px;
+}
+
+#reg-layer .select_box .tag_select, #reg-layer .select_box .tag_select_hover {
+    background: url(../img/common_v1.png) no-repeat 110px 17px;
+    overflow: hidden;
+}
+
+#reg-layer .form-control {
+    float: left;
+    margin-left: -130px;
+}
+
+#reg-layer .sub {
+    width: 200px;
+    height: 38px;
+    font: 18px "Microsoft YaHei";
+    background-color: #ff6600;
+    color: #fff;
+    border: 0;
+    border-radius: 3px;
+}
+
+/*wushi add 2015-09-15*/
+#reg-layer .select_box {
+    position: relative;
+    z-index: 9999;
+}
+
+#reg-layer .select_box .tag_select_open {
+    background: url(../img/common_v1.png) no-repeat 110px -23px;
+}
+
+#reg-layer .select_box .tag_options li {
+    padding: 0px 8px 0px 20px;
+}
+
+#reg-layer .select_box .open_selected {
+    background: #f8f9f9;
+}
+
+/*reg layer 弹出层*/
+#alert-bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: #000;
+    filter: alpha(opacity=10);
+    -moz-opacity: .1;
+    -khtml-opacity: .1;
+    opacity: .1;
+    z-index: 998;
+}
+
+#alert-main {
+    position: fixed;
+    border: 4px solid #c7ced4;
+    border-color: rgba(20, 63, 102, .1);
+    border-radius: 3px;
+    z-index: 9999;
+    left:50% !important;
+    top:50% !important;
+    margin-left:-204px !important;
+    margin-top:-157px !important;
+}
+
+#reg-layer .inputWrap .layer-input{
+    color: #333 !important;
+}
+
+#alert-bar {
+    padding-left: 10px;
+    font: 400 16px/40px "Microsoft YaHei";
+    color: #333;
+    background-color: #d9e3eb;
+}
+
+/*edit xushu 0916*/
+#alert-close {
+    position: absolute;
+    top: 14px;
+    right: 12px;
+    width: 11px;
+    height: 12px;
+    background: url(../../base/img/common.png) no-repeat -197px -108px;
+}
+
+#alert-con {
+    padding: 20px;
+    min-width: 300px;
+    min-height: 28px;
+    background-color: #fff;
+    font: 400 14px/23.9px "Microsoft YaHei";
+    text-align: center;
+}
+
+#reg-layer {
+    padding: 0 40px;
+    width: 280px;
+    text-align: left;
+}
+
+.layer-input {
+    margin-bottom: 18px;
+    padding: 0 10px;
+    width: 258px;
+    height: 38px;
+    border: 1px solid #e5e5e5;
+    line-height: 38px;
+}
+
+.layer-selects {
+    height: 60px;
+    word-spacing: .8em;
+}
+
+#reg-layer .strong-btn {
+    width: 280px;
+    height: 40px;
+    font-size: 18px;
+    line-height: 40px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 0;
+}
+
+.strong-btn, .strong-btn:hover {
+    display: inline-block;
+    min-width: 110px;
+    min-height: 36px;
+    font: 400 14px/36px "Microsoft YaHei";
+    border-width: 0;
+    border-radius: 5px;
+    border-radius: 5px;
+    border-radius: 5px;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 10px;
+    cursor: pointer;
+    background-color: #f60;
+    color: #fff
+}
+
+.strong-btn, .strong-btn:hover {
+    background-color: #f60;
+    color: #fff;
+}
+
+#reg-layer .select_box {
+    position: relative;
+    display: inline-block;
+    line-height: 38px;
+    background: #fff;
+    border: solid 1px #c8d2dd;
+    text-align: left;
+}
+
+#reg-layer .tag_select, #reg-layer .tag_select_hover, #reg-layer .tag_select_open {
+    width: 89px;
+    padding-left: 11px;
+    font: 400 12px/38px "宋体";
+}
+
+#reg-layer .tag_select, #reg-layer .tag_select_hover {
+
+    background-position: right -510px;
+}
+
+#reg-layer .tag_select, #reg-layer .tag_select_hover, #reg-layer .tag_select_open {
+    width: 106px;
+    padding: 0 14px 0 10px;
+    height: 38px;
+    line-height: 38px;
+    background-image: url(../img/common_v1.png);
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+#reg-layer .tag_options {
+    width: 130px;
+    max-height: 76px;
+    font: 400 12px/38px "宋体";
+}
+
+#reg-layer .tag_options {
+    border: solid 1px #d2dee8;
+    border-top: none;
+    background: #fff;
+    position: absolute;
+    left: -1px;
+    top: 38px;
+    clear: both;
+    color: #ddd;
+    line-height: 20px;
+    max-height: 76px;
+    overflow-y: auto;
+}
+
+#reg-layer .tag_options li {
+    padding: 0 10px;
+}
+
+#reg-layer .tag_options li {
+    color: #ccc;
+    padding: 0 10px;
+    margin-bottom: 7px;
+    line-height: 18px;
+}
+
+#reg-layer #select_select-01 {
+    float: left;
+}
+
+#reg-layer #select_select-02 {
+    float: right;
+}
+
+/*lee add 20160820*/
+#reg-layer #options_select-01, #reg-layer #options_select-02 {
+    bottom: auto;
+}
+
+.hide, .no {
+    display: none !important
+}
+
+/*lee add 20160819*/
+#alert-main1 {
+    width: 340px;
+    height: 68px;
+    position: fixed;
+    border: 4px solid #c7ced4;
+    border-color: rgba(20, 63, 102, .1);
+    border-radius: 3px;
+    z-index: 9999;
+}
+
+#alert-con1 {
+    padding: 20px;
+    min-width: 300px;
+    min-height: 28px;
+    background-color: #fff;
+    font: 400 14px/23.9px "Microsoft YaHei";
+    text-align: center;
+}
+
+.check_error {
+    color: #ff6666;
+    background: url(../img/error_icon.png) no-repeat 0 3px;
+    padding-left: 15px;
+    height: 18px;
+    line-height: 18px;
+    display: inline-block;
+}
+
+.bMar0 {
+    margin-bottom: 0 !important;
+}
+
+
+
+

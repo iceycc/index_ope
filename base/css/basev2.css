@@ -1,0 +1,55 @@
+@charset "utf-8";
+/*basev2 wushi 2016-07-28 */
+/* reset */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td {padding:0; margin:0;} 
+table {border-collapse:collapse; border-spacing:0;} 
+fieldset,img,abbr,acronym{border:0;} 
+address,caption,cite,code,dfn,em,th,var {font-weight: normal;font-style: normal;} 
+ol,ul,li{list-style: none;} 
+caption,th {text-align: left;} 
+h1,h2,h3,h4,h5,h6 {font-weight: normal;font-size: 100%;} 
+q:before,q:after {content:”;} 
+body{background:#fff;font-size:12px;font-family:"宋体", Arial;}
+textarea {outline: none; resize: none; overflow:auto;}
+img{vertical-align:middle;}
+:focus{outline:0;}
+.fix,.wrap1220,.wrap1218{*zoom: 1;}
+.fix:after,.wrap1220:after,.wrap1218:after{content: "";visibility: hidden;display: block;height: 0;clear: both;}
+a{color:#000; text-decoration:none;}a:hover{ color:#000;}
+a img {border: none;text-decoration: none;}
+label, button,a {cursor: pointer;}
+p{word-wrap:break-word;}
+.clear{ clear:both; height:1px; overflow:hidden;}
+/* layout */
+.col-center,.col-left,.col-right,.fl,.fr{float:left;display:inline}
+.col-right,.fr{float:right; display:inline;}
+.wrap1220{margin:0 auto;width:1220px}
+.wrap1218{margin:0 auto;width:1218px}
+/* 模块化 */
+.mod{position:relative;background:#fff}
+.bd,.hd{clear:both;/*lee add 20160820*/overflow-x: hidden;}
+.h2 .more,.hd .more,.imore{float:right;display:inline}
+.imore{text-indent:-999px}
+.hd .icon{position:absolute;overflow:hidden}
+.no{display:none!important}
+.yes{display:block!important}
+.noBor{border:none!important}
+.line{overflow:hidden;height:1px}
+/* 基础定义 */
+.tMar10{ margin-top:10px !important;}
+.lMar10{ margin-left:10px !important;}
+.rMar10{ margin-right:10px !important;}
+.bMar10{ margin-bottom:10px !important;}
+.noMar{ margin:0px auto !important;}
+.tPad10{ padding-top:10px !important;}
+.lPad10{ padding-left:10px !important;}
+.rPad10{ padding-right:10px !important;}
+.bPad10{ padding-bottom:10px !important;}
+.tlMar10{ margin:0 10px!important;}
+.btMar10{ margin:10px 0 !important;}
+.tlPad10{ padding:0 10px!important;}
+.btPad10{ padding:10px 0 !important;}
+.noPad{ padding:0px !important;}
+
+/* add zx 2016-8-4 */
+.hide, .no {display: none!important;}

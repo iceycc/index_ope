@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link href="../base/css/base.css" rel="stylesheet" type="text/css">
+<title>rightMenu</title>
+
+</head>
+
+<body style="background-color:transparent">
+
+<!-- rightMenu S-->
+<div class="rightMenu" >
+  <ul class="bottomMenu">
+
+    <li class="online-service"><a href="javascript:void(0);"  class="item">在线客服</a>
+      <div class="alertDiv"><a href="javascript:void(0);" >在线客服</a><cite class="icon"></cite></div>
+    </li>
+    <li class="feedback"><a href="#" target="_blank" class="item">用户反馈</a>
+      <div class="alertDiv"><a href="#" target="_blank">用户反馈</a><cite class="icon"></cite></div>
+    </li>
+    <li class="qrcode"><a href="javascript:void(0);" class="item">二维码</a>
+      <div class="alertDiv">
+        <div class="picTxt"><img src="img/footer-follow.jpg" width="138" height="138"></div>
+        <cite class="icon"></cite>
+       </div>
+    </li>
+    <li class="backtop backtop-visible"><a href="#" class="item">top</a>
+      <div class="alertDiv"><a href="#">返回顶部</a><cite class="icon"></cite></div>
+    </li>
+  </ul>
+</div>
+<!-- rightMenu E-->
+<!-- Entry S-->
+<div class="right_Entry">
+	<a  href="javascript:void(0);" class="close">关闭</a>
+</div>
+<div class="min_Entry">我要装修</div>
+<!-- Entry E-->
+<!--reg layer start-->
+<div id="reg-layer" style="padding:0; width:360px;" class="hide">
+	<iframe name="main" src="alertDiv.html"  scrolling="no" style="width:360px; height:220px;" frameborder="0" allowTransparency="true"></iframe>
+</div>
+<!--reg layer end--> 
+<script src="../base/js/jquery-1.8.3.min.js"></script>
+<script src="../base/js/uz-rightMenu.js"></script>
+<script src="../base/js/uz-alert.js"></script> 
+<script>
+	$(function(){
+		//alert test
+		$(".open-alert1, .item2").click(function(){uzAlert("reg-layer","10秒登记，免费获取全套装修管家服务")});	
+	})
+</script>
+</body>
+</html>

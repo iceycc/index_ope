@@ -1,0 +1,136 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link href="css/basev2.css" rel="stylesheet" type="text/css">
+<link href="css/footFloor.css" rel="stylesheet" type="text/css">
+<link href="css/alertDiv_new.css" rel="stylesheet" type="text/css">
+<title>footFloor</title>
+</head>
+
+<body style="height:2500px;">
+<!-- footFloor S -->
+<div id="basic-alert" class="hide">
+  <p class="al-c" id="basic-alert-content"></p>
+</div>
+
+<div class="footFloor">
+    <div class="wrap1220">
+        <div class="footIcon">通通免费，设计，报价，审核，监理，环保</div>
+        <div id="submitForm" class="user-info">
+            <form name="myform" action="{WEBURL}index.php?m=member&f=fbform&v=public_apply" method="post" id="myform2" onSubmit="return checkInputs()">
+                <div class="your-name fl">
+                    <input name="title" id="Xtitle" type="text" placeholder="您的称呼">
+                </div>
+                <div class="your-telephone fl">
+                    <input name="telephone" id="Xtelephone" type="text" placeholder="您的电话">
+                </div>
+                <div  class="fl mr2">
+                    <select  name="select-01" id="select-01"  style="display: none;">
+                        <option value="0">省/市</option>
+                    </select>
+                </div>
+                <div  class="fl mr2">
+                    <select  name="select-02" id="select-02"  style="display: none;">
+                        <option value="0" selected="">市/地区</option>
+                    </select>
+                </div>
+
+
+                <input id="top-apply" name="" type="submit" value="我要装修" class="sub fl">
+                <input name="source" id="source" type="hidden" size="30" value="PC-首页">
+            </form>
+        </div>
+        <cite class="close">收起</cite>
+    </div>
+</div>
+<div class="min_footFloor" style="left: -300%; display: block;">展开</div>
+
+
+
+
+<!-- footFloor E -->
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/linkage_select_fix.js"></script>
+<!--<script src="js/inputprompt.js"></script>   wushi del 2016-09-09  -->
+<script type="text/javascript" src="js/uz-alert.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+
+
+
+<script type="text/javascript">
+//input
+$(function(){
+	
+    $.loadProvince('select-01','select-02');
+    /*  $('input, textarea').placeholder();  wushi del 2016-09-09*/
+	
+})
+
+//input 验证
+function checkInputs() {
+    
+    if ($("#Xtitle").val() == '' || $("#Xtitle").val() == '您的称呼') {
+        uzAlert2("basic-alert", "出错了", "您的称呼不能为空！");
+        $("#Xtitle").focus();
+        return false;
+    }
+    var reg = /^[\u4E00-\u9FA5]+$/;
+    var Xtitle = $("#Xtitle").val();
+    if (!reg.test(Xtitle)) {
+        uzAlert2("basic-alert", "出错了", "称呼必须是中文！");
+        $("#Xtitle").focus();
+        return false;
+    }
+	if($("#Xtitle").val().replace(/[^x00-xff]/g,"**").length>20) {
+		uzAlert2("basic-alert","出错了","称呼保持在10个字以内！");
+		$("#Xtitle").focus();
+		return false;
+	}
+    if ($("#Xtelephone").val() == '') {
+        uzAlert2("basic-alert", "出错了", "您的电话不能为空！");
+        $("#Xtelephone").focus();
+        return false;
+    } else {
+        var tel = /^1[3|4|5|7|8|9][0-9]\d{8}$/;
+        if (!tel.test($("#Xtelephone").val())) {
+            uzAlert2("basic-alert", "出错了", "您的电话输入有误，请重新填写！");
+            $("#Xtelephone").focus();
+            return false;
+        }
+    }
+    if ($("#select-01").val() == 0) {
+        uzAlert2("basic-alert", "出错了", "请选择所在城市！");
+        return false;
+    }
+    if ($("#select-02").val() == 0) {
+        uzAlert2("basic-alert", "出错了", "请选择所在区！");
+        return false;
+    }
+    $.post(web_url + "index.php?m=member&f=fbform&v=public_apply", {
+            title: $("#Xtitle").val(),
+            telephone: $("#Xtelephone").val(),
+            source: $("#source").val(),
+            LK1_1: $("#select-01").val(),
+            LK1_2: $("#select-02").val()
+        },
+        function(data) {
+            if (data == '您已提交过需求，12小时只允许提交一次') {
+                var basic_title = '请耐心等待！';
+            } else {
+                var basic_title = '恭喜您申请成功！';
+            }
+            uzAlert("basic-alert", basic_title, data + '<br><input class="strong-btn" type="button" value="确定" onclick="closeAlert();">');
+
+            $("#Xtitle").val('');
+            $("#Xtelephone").val('');
+        });
+    return false;
+}
+
+
+
+</script>
+
+</body>
+</html>
