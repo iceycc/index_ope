@@ -58,7 +58,7 @@ a {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background: url('../images/banner.png') no-repeat;
+  background: url('../img/banner.png') no-repeat;
 }
 .banner .login_bar {
   position: absolute;
@@ -162,6 +162,10 @@ a {
   line-height: 32px;
 }
 /*选装修 B*/
+.choose_decorate {
+  /*叠加轮播*/
+  /*装修管家 装修日记 */
+}
 .choose_decorate ul {
   width: 100%;
   display: inline-block;
@@ -190,5 +194,17 @@ a {
 }
 .choose_decorate .choose_decorate_tap li:last-child a {
   color: #fff;
+}
+.choose_decorate .dec_swiper {
+  width: 100%;
+  height: 640px;
+  margin-top: 60px;
+  background: #ccc;
+}
+.choose_decorate .manager_bg {
+  width: 100%;
+  height: 1565px;
+  margin-top: 120px;
+  background: url("../img/manager_bar.png") no-repeat center center;
 }
 /*选装修 E*/
