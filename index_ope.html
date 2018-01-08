@@ -10,9 +10,10 @@
     <!-- 初始化样式 -->
     <link type="text/css" rel="stylesheet" href="base/css/reset.css">
     <!-- posterTvGrid插件css文件 -->
-    <link type="text/css" rel="stylesheet" href="css/posterTvGrid.css">    
+    <link type="text/css" rel="stylesheet" href="css/posterTvGrid.css">
     <!--  -->
     <link type="text/css" rel="stylesheet" href="css/index_ope.css">
+    <link type="text/css" rel="stylesheet" href="css/owner_say.css">
 
 </head>
 
@@ -20,7 +21,7 @@
     <!-- top B -->
 
     <!-- top E -->
-    
+
     <!-- 主体部分 main -->
     <div class="index-main">
 
@@ -37,29 +38,29 @@
                         <img src="./img/email.png" alt="email">
                         <div class="text">
                             <p>3套设计方案免费领取</p>
-                            <p>根据户型量身定制  /  一次性获取3张设计图  / 免费设计</p>
+                            <p>根据户型量身定制 / 一次性获取3张设计图 / 免费设计</p>
                         </div>
                     </div>
                     <!-- line -->
                     <div class="line"></div>
                     <!-- <HR align=center width=1 color=red size=100> -->
-                    
+
                     <!-- 右侧 -->
                     <div class="login_box">
                         <form action="">
-                        <div class="info_input">
-                            <label for=""></label>
-                            <input type="text" placeholder="北京">
-                        </div>
-                        <div class="info_input">
-                            <label for=""></label>
-                            <input type="text" placeholder="您的称呼">
-                        </div>
-                        <div class="info_input">
-                            <label for=""></label>
-                            <input type="text" placeholder="你的联系方式">
-                        </div>
-                        <button class="click_get" type="submit">点击获取</button>    
+                            <div class="info_input">
+                                <label for=""></label>
+                                <input type="text" placeholder="北京">
+                            </div>
+                            <div class="info_input">
+                                <label for=""></label>
+                                <input type="text" placeholder="您的称呼">
+                            </div>
+                            <div class="info_input">
+                                <label for=""></label>
+                                <input type="text" placeholder="你的联系方式">
+                            </div>
+                            <button class="click_get" type="submit">点击获取</button>
                         </form>
                     </div>
                 </div>
@@ -78,12 +79,24 @@
 
             <!-- 选项 -->
             <ul class="choose_decorate_tap">
-                <li><a href="javascript:;">基础装修</a></li>
-                <li><a href="javascript:;">监理服务</a></li>
-                <li><a href="javascript:;">拎包入住</a></li>
-                <li><a href="javascript:;">全屋装修</a></li>
-                <li><a href="javascript:;">局部焕新</a></li>
-                <li><a href="javascript:;">更多</a></li>
+                <li>
+                    <a href="javascript:;">基础装修</a>
+                </li>
+                <li>
+                    <a href="javascript:;">监理服务</a>
+                </li>
+                <li>
+                    <a href="javascript:;">拎包入住</a>
+                </li>
+                <li>
+                    <a href="javascript:;">全屋装修</a>
+                </li>
+                <li>
+                    <a href="javascript:;">局部焕新</a>
+                </li>
+                <li>
+                    <a href="javascript:;">更多</a>
+                </li>
             </ul>
 
             <!-- 叠加轮播   -->
@@ -91,18 +104,127 @@
 
             <!-- 装修管家banner  -->
             <div class="manager_bar">
-                <div class="manager_bg"></div>
                 <!-- 版心 -->
-                <div class="wrapper1220">
+                <div class="manager_bar_c wrapper1220">
                     <!-- 右侧装修数据 -->
-                    <div class="dec_data"></div>
-                    <!-- 中间装修日记 -->
-                    <div class="dec_note"></div>
-                    <!-- 下侧的装修管家日记申请 -->
-                    <div class="dec_join"></div>
+                    <div class="dec_data">
+                        <div class="dec_data_bg"></div>
+                        <ul>
+                            <li>
+                                <div class="t1">
+                                    <span>297</span>项</div>
+                                <div class="t2">审核报价</div>
+                            </li>
+                            <li>
+                                <div class="t1">
+                                    <span>297</span>项</div>
+                                <div class="t2">审核报价</div>
+                            </li>
+                            <li>
+                                <div class="t1">
+                                    <span>297</span>项</div>
+                                <div class="t2">审核报价</div>
+                            </li>
+                            <li>
+                                <div class="t1">
+                                    <span>297</span>项</div>
+                                <div class="t2">审核报价</div>
+                            </li>
+                            <li>
+                                <div class="t1">
+                                    <span>297</span>项</div>
+                                <div class="t2">审核报价</div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- 装修日记 和 服务申请 -->
+                    <div class="dec_main">
+                        <!-- 装修日记 -->
+                        <div class="dec_note">
+                            <ul>
+                                <li>
+                                    <div class="dec_main_pic">
+                                        <img src="./img/dec_note_pic1.jpg" alt="">
+                                        <img src="./img/dec_note_pic1.jpg" alt="">
+                                    </div>
+                                    <div class="dec_info">
+                                        <span>装修前</span>
+                                        <i class="line"></i>
+                                        <span>装修后</span>
+                                    </div>
+                                    <div class="dec_mes">
+                                        <div class="dec_mes_title">
+                                            <span>开工仪式</span>
+                                            <i class="line"></i>
+                                            <span>北京市-朝阳区-百子湾家园</span>
+                                        </div>
+                                        <p class="dec_mes_detail">对于初次接触装修的业主来说，房子装修绝对是一个不小的考验。装修流程如此之多，而且装修也要严格控制。</p>
+
+                                    </div>
+
+
+                                </li>
+                                <li>
+                                    <div class="dec_main_pic">
+                                        <img src="./img/dec_note_pic1.jpg" alt="">
+                                        <img src="./img/dec_note_pic1.jpg" alt="">
+                                    </div>
+                                    <div class="dec_info">
+                                        <span>装修前</span>
+                                        <i class="line"></i>
+                                        <span>装修后</span>
+                                    </div>
+                                    <div class="dec_mes">
+                                        <div class="dec_mes_title">
+                                            <span>开工仪式</span>
+                                            <i class="line"></i>
+                                            <span>北京市-朝阳区-百子湾家园</span>
+                                        </div>
+                                        <p class="dec_mes_detail">对于初次接触装修的业主来说，房子装修绝对是一个不小的考验。装修流程如此之多，而且装修也要严格控制。</p>
+
+                                    </div>
+
+
+                                </li>
+                            </ul>
+                            <div class="more_dec_note">
+                                <a href="javascript:;">更多装修日记</a>
+                            </div>
+                        </div>
+                        <!-- 管家服务申请 -->
+                        <div class="dec_join_bar">
+                            <div class="left_text">
+                                <p>管家服务申请</p>
+                                <p>提交报名后，管家会在12小时内与您联系</p>
+                            </div>
+                            <div class="right_login_box">
+                                <div>
+                                    <label for=""></label>
+                                    <input class="yourname" type="text" placeholder="您的称呼">
+                                </div>
+                                <div>
+                                    <label for=""></label>
+                                    <input class="yourtel" type="text" placeholder="您的联系方式">
+                                </div>
+                                <div>
+                                    <!-- TODO: 下拉框的  -->
+                                    <label for=""></label>
+                                    <input class="yourtel" type="text" placeholder="所在地区">
+                                </div>
+                                <div>
+                                    <label for=""></label>
+                                    <input class="yourtel" type="text" placeholder="管家服务器类型">
+                                </div>
+                                <div>
+                                    <label for=""></label>
+                                    <input class="yourtel" type="text" placeholder="您的联系方式">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            
+
         </div>
         <!-- 选装修 E-->
 
@@ -111,12 +233,315 @@
 
             <!-- 标题 -->
             <div class="com_title">
-                    <h2>业主怎么说</h2>
-                    <p>业主怎么说描述文字业主怎么说描述文字业主怎么说描述文字</p>
+                <h2>业主怎么说</h2>
+                <p>业主怎么说描述文字业主怎么说描述文字业主怎么说描述文字</p>
             </div>
 
-            <!-- 业主说 tab B -->
-            <div class="owner_tab"></div>
+
+            <!--业主说 tab s-->
+            <div class="owner_tab wrapper1220 move_top">
+                <ul class="owner_tab_button">
+                    <li class="owner_list_logo1 active">
+                        <span></span>业主评价</li>
+                    <li class="owner_list_logo2">
+                        <span></span>业主故事</li>
+                    <li class="owner_list_logo3">
+                        <span></span>竣工与开工</li>
+                    <li class="owner_list_logo4">
+                        <span></span>装修对比图</li>
+                </ul>
+                <ol class="owner_tab_content">
+                    <!--业主评价 s -->
+                    <li class="owner_list active evaluate">
+                        <!--业主评价列表-->
+                        <ul class="evate_cont">
+
+                            <li class="evate_list">
+                                <!--装修前后对比图 s-->
+                                <div class="evate_list_img">
+                                    <div class="evate_img evate_img_l">
+                                        <div class="evate_img_bor">
+                                            <img class="lazy" src="./img/main-img/ws-temp14.jpg">
+                                        </div>
+                                        <p>装修前</p>
+                                    </div>
+
+                                    <div class="evate_text evate_img_vs">vs</div>
+
+                                    <div class="evate_img evate_img_r">
+                                        <div class="evate_img_bor">
+                                            <img class="lazy" src="./img/main-img/ws-temp14.jpg">
+                                        </div>
+                                        <p>装修后</p>
+                                    </div>
+                                </div>
+                                <!--装修前后对比图 e-->
+
+                                <!--业主说文案 s-->
+                                <div class="evate_owner_text">
+                                    <!--业主头像-->
+                                    <div class="evate_user_logo">
+                                        <img class="lazy" src="./img/main-img/ws-temp14.jpg">
+                                    </div>
+                                    <!--业主名字发表时间-->
+                                    <div class="evate_name">
+                                        <span class="ev_name">王女士</span>
+                                        <span class="ev_time">2017.5.3</span>
+                                    </div>
+                                    <!--发表内容-->
+                                    <p class="p1">因为烟机自带的出风止逆阀和烟道口加装的下垂式密闭阀都是依靠烟机风力开启、阀片自重或加装助力弹簧关闭的结构</p>
+                                </div>
+                                <!--业主说文案 e-->
+                            </li>
+
+                            <li class="evate_list">
+                                <!--装修前后对比图 s-->
+                                <div class="evate_list_img">
+                                    <div class="evate_img evate_img_l">
+                                        <div class="evate_img_bor">
+                                            <img class="lazy" src="./img/main-img/ws-temp14.jpg">
+                                        </div>
+                                        <p>装修前</p>
+                                    </div>
+                                    <div class="evate_text evate_img_vs">vs</div>
+                                    <div class="evate_img evate_img_r">
+                                        <div class="evate_img_bor">
+                                            <img class="lazy" src="./img/main-img/ws-temp14.jpg">
+                                        </div>
+                                        <p>装修后</p>
+                                    </div>
+                                </div>
+                                <!--装修前后对比图 e-->
+
+                                <!--业主说文案 s-->
+                                <div class="evate_owner_text">
+                                    <!--业主头像-->
+                                    <div class="evate_user_logo">
+                                        <img class="lazy" src="./img/main-img/ws-temp14.jpg">
+                                    </div>
+                                    <!--业主名字发表时间-->
+                                    <div class="evate_name">
+                                        <span class="ev_name">王女士</span>
+                                        <span class="ev_time">2017.5.3</span>
+                                    </div>
+                                    <!--发表内容-->
+                                    <p class="p1">因为烟机自带的出风止逆阀和烟道口加装的下垂式密闭阀都是依靠烟机风力开启、阀片自重或加装助力弹簧关闭的结构</p>
+                                </div>
+                                <!--业主说文案 e-->
+                            </li>
+                        </ul>
+
+                        <!--更多对比图-->
+                        <div class="more_journal">
+                            <!--检测日志 s-->
+                            <div class="more_serves">
+                                <a href="javascript:;">
+                                    <span>查看更多装修对比图</span>
+                                </a>
+                            </div>
+                            <!--检测日志 e-->
+                        </div>
+                    </li>
+                    <!--业主评价 e-->
+
+                    <!--业主故事 s -->
+                    <li class="owner_list story">
+                        <ul class="evate_cont">
+
+                            <li class="evate_list">
+                                <div class="story_img st_img">
+                                    <img class="lazy" src="./img/main-img/ws-temp14.jpg">
+
+                                    <div class="st_text_bg"></div>
+                                    <div class="st_text">
+                                        <p>35平米空间里</p>
+                                        <p>都是我们的小确幸</p>
+                                    </div>
+                                </div>
+                                <div class="story_text">
+                                    <div class="story_text_tit">
+                                        <h2>
+                                            <span>北京</span>
+                                            <b>石景山永乐小区</b>
+                                        </h2>
+                                    </div>
+                                    <ul class="story_text_cont">
+                                        <li>
+                                            <span></span>建筑面积：35㎡一室一厅
+                                            <span></span>风格：现代简约
+                                            <span></span>预算：半包近3万</li>
+                                        <li>
+                                            <span></span>装修管家：金牌管家-吴懿</li>
+                                        <li>
+                                            <span></span>装修公司：北京苏技创意建</li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li class="evate_list ">
+                                <div class="story_img video_img">
+                                    <!--视频连接-->
+                                    <input class="VIDEO_URL" type="hidden" value="http://player.youku.com/embed/XMTU1MDQ4MTY0OA==">
+                                    <img class="lazy" src="./img/main-img/ws-temp14.jpg">
+                                    <div class="video_img_logo"></div>
+                                </div>
+                                <div class="story_text">
+                                    <div class="story_text_tit">
+                                        <h2>
+                                            <span>北京</span>
+                                            <b>石景山永乐小区</b>
+                                        </h2>
+                                    </div>
+                                    <ul class="story_text_cont">
+                                        <li>
+                                            <span></span>建筑面积：35㎡一室一厅
+                                            <span></span>风格：现代简约
+                                            <span></span>预算：半包近3万</li>
+                                        <li>
+                                            <span></span>装修管家：金牌管家-吴懿</li>
+                                        <li>
+                                            <span></span>装修公司：北京苏技创意建</li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                        <!--查看更多业主故事-->
+                        <div class="more_journal">
+                            <!--检测日志 s-->
+                            <div class="more_serves">
+                                <a href="javascript:;">
+                                    <span>查看更多业主故事</span>
+                                </a>
+                            </div>
+                            <!--检测日志 e-->
+                        </div>
+                    </li>
+                    <!--业主故事 e-->
+
+                    <!--竣工与开工 s -->
+                    <li class="owner_list complete">
+                        <ul class="comp_ul">
+                            <li class="comp_list">
+                                <div class="comp_img">
+                                    <img class="lazy" src="./img/main-img/ws-temp14.jpg">
+                                </div>
+                                <div class="comp_text">
+                                    <div class="comp_text_bg"></div>
+                                    <div class="comp_text_cont">
+                                        <h4>邵女士家</h4>
+                                        <p>深圳市龙岗区大族河山</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="comp_list">
+                                <div class="comp_img">
+                                    <img class="lazy" src="./img/main-img/ws-temp14.jpg">
+                                </div>
+                                <div class="comp_text">
+                                    <div class="comp_text_bg"></div>
+                                    <div class="comp_text_cont">
+                                        <h4>邵女士家</h4>
+                                        <p>深圳市龙岗区大族河山</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="comp_list">
+                                <div class="comp_img">
+                                    <img class="lazy" src="./img/main-img/ws-temp14.jpg">
+                                </div>
+                                <div class="comp_text">
+                                    <div class="comp_text_bg"></div>
+                                    <div class="comp_text_cont">
+                                        <h4>邵女士家</h4>
+                                        <p>深圳市龙岗区大族河山</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="comp_list">
+                                <div class="comp_img">
+                                    <img class="lazy" src="./img/main-img/ws-temp14.jpg">
+                                </div>
+                                <div class="comp_text">
+                                    <div class="comp_text_bg"></div>
+                                    <div class="comp_text_cont">
+                                        <h4>邵女士家</h4>
+                                        <p>深圳市龙岗区大族河山</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="comp_list">
+                                <div class="comp_img">
+                                    <img class="lazy" src="./img/main-img/ws-temp14.jpg">
+                                </div>
+                                <div class="comp_text">
+                                    <div class="comp_text_bg"></div>
+                                    <div class="comp_text_cont">
+                                        <h4>邵女士家</h4>
+                                        <p>深圳市龙岗区大族河山</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="comp_list">
+                                <div class="comp_img">
+                                    <img class="lazy" src="./img/main-img/ws-temp14.jpg">
+                                </div>
+                                <div class="comp_text">
+                                    <div class="comp_text_bg"></div>
+                                    <div class="comp_text_cont">
+                                        <h4>邵女士家</h4>
+                                        <p>深圳市龙岗区大族河山</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="comp_list">
+                                <div class="comp_img">
+                                    <img class="lazy" src="./img/main-img/ws-temp14.jpg">
+                                </div>
+                                <div class="comp_text">
+                                    <div class="comp_text_bg"></div>
+                                    <div class="comp_text_cont">
+                                        <h4>邵女士家</h4>
+                                        <p>深圳市龙岗区大族河山</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="comp_list">
+                                <div class="comp_img">
+                                    <img class="lazy" src="./img/main-img/ws-temp14.jpg">
+                                </div>
+                                <div class="comp_text">
+                                    <div class="comp_text_bg"></div>
+                                    <div class="comp_text_cont">
+                                        <h4>邵女士家</h4>
+                                        <p>深圳市龙岗区大族河山</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <!--竣工与开工 e-->
+
+                    <!--装修对比图 s -->
+                    <li class="owner_list contrast">
+                        <div class="space_img">
+                            <div class="space_img_tittext">
+                                <h2>深圳市龙岗区大族河山</h2>
+                                <div>
+                                    <span>管家： 严颜</span>
+                                    <span>管家： 严颜</span>
+                                    <span>管家： 严颜</span>
+                                    <span>管家： 严颜</span>
+                                    <span>管家： 严颜</span>
+                                    <span>管家： 严颜</span>
+                                </div>
+                            </div>
+                            <div id="posterTvGridContrast"></div>
+                        </div>
+                    </li>
+                    <!--装修对比图 e-->
+                </ol>
+            </div>
+            <!--业主说 tab e-->
         </div>
         <!-- 业主怎么说 E -->
 
@@ -125,12 +550,54 @@
 
             <!-- 标题 -->
             <div class="com_title">
-                    <h2>灵感图库</h2>
-                    <p>灵感图库描述灵感图库描述灵感图库描述灵感图库描述</p>
+                <h2>灵感图库</h2>
+                <p>灵感图库描述灵感图库描述灵感图库描述灵感图库描述</p>
             </div>
 
             <!-- 灵感图库 tap   -->
             <div class="ins_pics_tap">
+                <!-- 大的分类tap -->
+                <ul class="inspics_tab_button wrapper1220">
+                    <li class="inspics_list1 active">搜风格</li>
+                    <li class="inspics_list2">搜面积</li>
+                    <li class="inspics_list3">搜空间</li>
+                </ul>
+                <!-- 小的分类tap -->
+                <ul class="inspics_tap_small">
+                    <li>新古代</li>
+                    <i>/</i>
+                    <li>现代</li>
+                    <i>/</i>                                        
+                    <li>欧式</li>
+                    <i>/</i>                    
+                    <li>田园</li>
+                    <i>/</i>                    
+                    <li>中式</li>
+                    <i>/</i>                   
+                    <li>美式</li>
+                    <i>/</i>                    
+                    <li>地中海</li>
+                    <i>/</i>                    
+                    <li>日式</li>
+                </ul>
+                <ol>
+                    <!-- 搜风格 -->
+                    <li class="inspics_list search_style active">
+                        <div id="masonry" class="ins_pics container-fluid">
+                            <div class="dec_pic1"></div>
+                            <div class="dec_pic2"></div>
+                            <div class="dec_pic3"></div>
+                            <div class="dec_pic4"></div>
+                            <div class="dec_pic5"></div>
+                            <div class="dec_pic6"></div>
+                        </div>
+                    </li>
+                    <!-- 搜面积 -->
+                    <li class="inspics_list search_area"></li>
+                    <!-- 搜空间 -->
+                    <li class="inspics_list search_room"></li>
+
+                </ol>
 
             </div>
 
@@ -142,9 +609,9 @@
 
             <!-- 标题 -->
             <div class="com_title">
-                    <h2>装修攻略</h2>
-                    <p>装修攻略描述装修攻略描述装修攻略描述装修攻略描述</p>
-            </div>            
+                <h2>装修攻略</h2>
+                <p>装修攻略描述装修攻略描述装修攻略描述装修攻略描述</p>
+            </div>
 
             <!-- 攻略详情 -->
             <div class="strategy_detail">
@@ -152,7 +619,7 @@
             </div>
 
         </div>
-       
+
         <!-- 关于我们 -->
         <div class="about_us">
             <!-- 标题 -->
@@ -160,7 +627,7 @@
                     <h2>关于我们</h2>
                     <p>关于我们描述关于我们描述关于我们描述关于我们描述关于我们描述</p>
             </div>  -->
-            
+
             <!-- 关于我们展示 -->
             <div class="about_us_show">
 
@@ -176,14 +643,14 @@
 </body>
 
 </html>
-<!-- <script type="text/javascript" src="./base/js/jquery-1.8.3.min.js"></script>
-<script type="text/javascript" src="./base/js/jquery-pleaceholder.js"></script>
-<script type="text/javascript" src="./base/js/jquery.bxslider.min.js"></script>
-<script type="text/javascript" src="./base/js/select_new.js"></script>
-<script type="text/javascript" src="./base/js/connom_new.js"></script>
+<script type="text/javascript" src="./base/js/jquery-1.8.3.min.js"></script>
 <script type="text/javascript" src="./base/js/jquery.lazyload.js"></script>
-<script type="text/javascript" src="./base/js/scrollreveal.min.js"></script>
-<script type="text/javascript" src="js/posterTvGrid.js"></script>
-<script type="text/javascript" src="js/index_ope.js"></script> -->
+<!-- 原生瀑布流 -->
+<!-- <script src="path/waterfall.js"></script> -->
+<!-- jQuery瀑布流插件 Masonry -->
+<script src="./js/masonry-docs.js"></script>
+
+
+<script type="text/javascript" src="js/index_ope.js"></script>
 <script>
 </script>

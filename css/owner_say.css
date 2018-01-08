@@ -1,0 +1,578 @@
+.owner_tab {
+    margin-top: 84px;
+    -webkit-box-shadow: 0 5px 10px #ccc;
+    box-shadow: 0 5px 10px #ccc;
+}
+
+.owner_tab_button {
+    font-size: 0;
+    width: 1220px;
+}
+
+.owner_tab_button li {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 306px;
+    height: 80px;
+    border: 1px solid #e2e2e2;
+    background: #ededed;
+    margin-right: -1px;
+    font-size: 24px;
+    text-align: center;
+    line-height: 80px;
+    cursor: pointer;
+}
+
+.owner_tab_button li.owner_list_logo1 span {
+    background-position-y: -164px;
+}
+
+.owner_tab_button li.owner_list_logo2 span {
+    background-position-y: -190px;
+}
+
+.owner_tab_button li.owner_list_logo3 span {
+    background-position-y: -221px;
+}
+
+.owner_tab_button li.owner_list_logo4 span {
+    background-position-y: -251px;
+}
+
+.owner_tab_button li span {
+    width: 26px;
+    vertical-align: middle;
+    display: inline-block;
+    height: 23px;
+    position: relative;
+    top: -2px;
+    margin-right: 10px;
+    background: url("../img/main-img/sprin_bg.png") no-repeat;
+    background-position-x: -50px;
+    -webkit-transition: 0.2s all ease;
+    transition: 0.2s all ease;
+}
+
+.owner_tab_button li.active {
+    background: #fff;
+    border-bottom: none;
+    border-color: #ededed;
+}
+
+.owner_tab_button li.active span {
+    background-position-x: 0px;
+}
+
+.owner_tab_content {
+    width: 1221px;
+    height: 701px;
+    border: 1px solid #ededed;
+    border-top: none;
+    background: #fff;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+}
+
+
+/*业主评价*/
+
+.owner_list {
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    -webkit-transition: 0.6s all ease;
+    transition: 0.6s all ease;
+    background: #fff;
+    width: 100%;
+}
+
+.owner_list.active {
+    opacity: 1;
+    z-index: 1000;
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+}
+
+.evate_cont {
+    font-size: 0;
+    text-align: center;
+    margin-top: 35px;
+}
+
+.evate_list {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    padding: 23px 39px;
+    border: 1px solid #ededed;
+    width: 477px;
+    vertical-align: top;
+}
+
+.evate_list:first-child {
+    margin-right: 50px;
+}
+
+.evate_img,
+.evate_text {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    vertical-align: middle;
+}
+
+.evate_img {
+    border: 1px solid #ededed;
+}
+
+.evate_img img {
+    width: 208px;
+    height: 200px;
+    -webkit-transition: 0.5s all ease;
+    transition: 0.5s all ease;
+}
+
+.evate_img p {
+    line-height: 50px;
+    color: #999;
+    font-size: 18px;
+    text-align: center;
+    height: 50px;
+}
+
+.evate_img_l,
+.evate_img_r {
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.evate_img_l img:hover,
+.evate_img_r img:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.evate_img_bor {
+    width: 208px;
+    height: 200px;
+    overflow: hidden;
+}
+
+.evate_text {
+    height: 250px;
+    width: 57px;
+    line-height: 250px;
+    text-align: center;
+    font-style: italic;
+    font-size: 22px;
+    color: #333;
+}
+
+.evate_owner_text {
+    background: #f8f8f8;
+    border-radius: 5px;
+    margin-top: 45px;
+    position: relative;
+    min-height: 60px;
+    text-align: left;
+    padding-bottom: 24px;
+}
+
+.evate_user_logo {
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    position: absolute;
+    left: 18px;
+    top: -20px;
+    border: 3px solid #fff;
+    border-radius: 100%;
+}
+
+.evate_user_logo img {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+
+.evate_name {
+    text-indent: 84px;
+    line-height: 43px;
+    height: 43px;
+}
+
+.evate_name .ev_name {
+    font-size: 17px;
+    color: #333;
+}
+
+.evate_name .ev_time {
+    font-size: 15px;
+    color: #999;
+}
+
+.evate_owner_text .p1 {
+    font-size: 15px;
+    color: #999;
+    line-height: 26px;
+    padding: 0 20px;
+    text-indent: 2em;
+}
+
+
+/*业主故事*/
+
+.story .evate_list {
+    width: 553px;
+    padding: 0;
+}
+
+.story_img {
+    position: relative;
+    overflow: hidden;
+}
+
+.story_img img {
+    width: 100%;
+    height: 300px;
+    -webkit-transition: 0.2s all ease;
+    transition: 0.2s all ease;
+}
+
+.st_img .st_text_bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.3;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    -webkit-transition: 0.2s all ease;
+    transition: 0.2s all ease;
+    opacity: 0;
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+}
+
+.st_img .st_text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    font-size: 20px;
+    line-height: 30px;
+    padding: 10px 0;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    z-index: 2;
+    -webkit-transition: 0.2s all ease;
+    transition: 0.2s all ease;
+    -webkit-transform: translate(-50%, -50%) scale(0);
+    transform: translate(-50%, -50%) scale(0);
+}
+
+.st_img:hover .st_text {
+    -webkit-transform: translate(-50%, -50%) scale(1);
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.st_img:hover .st_text_bg {
+    opacity: 0.2;
+}
+
+.st_img:hover img {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.video_img_logo {
+    margin-left: -30px;
+    margin-top: -30px;
+    width: 61px;
+    height: 61px;
+    max-width: 61px;
+    max-height: 61px;
+    background: url("../img/main-img/bofang.png") no-repeat center center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transition: 0.35s all ease;
+    transition: 0.35s all ease;
+    z-index: 10;
+    opacity: 0;
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+}
+
+.video_img {
+    cursor: pointer;
+}
+
+.video_img:hover .video_img_logo {
+    opacity: 1;
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+}
+
+.story_text {
+    padding: 27px 13px 17px 13px;
+    width: 527px;
+}
+
+.story_text {
+    text-align: left;
+}
+
+.story_text_tit {
+    margin-bottom: 23px;
+}
+
+.story_text_tit h2 {
+    font-size: 18px;
+    color: #333;
+    font-weight: normal;
+    line-height: 14px;
+    color: #333;
+    font-weight: normal;
+}
+
+.story_text_tit h2 span {
+    display: inline-block;
+    width: 67px;
+    text-indent: 23px;
+    margin-right: 10px;
+    font-size: 18px;
+    line-height: 18px;
+    vertical-align: middle;
+    background: url("../img/main-img/sprin_bg.png") no-repeat -50px -125px;
+}
+
+.story_text_tit h2 span,
+.story_text_tit h2 b {
+    vertical-align: middle;
+    font-weight: normal;
+}
+
+.story_text_tit h2 b {
+    display: inline-block;
+    border-left: 1px solid #f60;
+    text-indent: 12px;
+}
+
+.story_text_cont {
+    font-size: 14px;
+    color: #999;
+    text-indent: 80px;
+    line-height: 26px;
+    text-align: left;
+}
+
+.story_text_cont li span {
+    margin: 0 10px;
+    border-right: 1px dashed #ccc;
+    height: 10px;
+    display: inline-block;
+    width: 1px;
+    overflow: hidden;
+}
+
+.story_text_cont li span:first-child {
+    display: none;
+}
+
+
+/*开工&竣工*/
+
+.comp_ul {
+    width: 1147px;
+    height: 601px;
+    border: 1px solid #ededed;
+    margin: 0 auto;
+    margin-top: 36px;
+    overflow: hidden;
+}
+
+.comp_img {
+    width: 258px;
+    height: 234px;
+    overflow: hidden;
+}
+
+.comp_list {
+    position: relative;
+    width: 258px;
+    height: 234px;
+    border: 1px solid #ededed;
+    overflow: hidden;
+    margin: 43px 0 0 21px;
+    float: left;
+}
+
+.comp_text {
+    background: rgba(0, 0, 0, .3);
+    position: absolute;
+    left: 0;
+    bottom: -80px;
+    width: 100%;
+    text-align: left;
+    -webkit-transition: 0.6s all ease;
+    transition: 0.6s all ease;
+}
+
+.comp_list:hover .comp_text {
+    bottom: 0;
+}
+
+.comp_list img {
+    opacity: 0.8;
+    -webkit-transition: 0.35s all ease;
+    transition: 0.35s all ease;
+}
+
+.comp_list:hover img {
+    opacity: 1;
+}
+
+.comp_text_bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.comp_text_bg {
+    background: #000;
+    opacity: 0.2;
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=20);
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=20);
+}
+
+.comp_text_cont {
+    position: relative;
+    z-index: 2;
+    text-indent: 15px;
+    color: #fff;
+    padding: 6px 0;
+}
+
+.comp_text_cont h4 {
+    font-size: 18px;
+    line-height: 31px;
+    font-weight: normal;
+}
+
+.comp_text_cont p {
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.more_serves {
+    text-align: center;
+    height: 72px;
+    margin-top: 64px;
+}
+
+.more_serves a:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 100%;
+    background: #3fb6f4;
+    position: absolute;
+    left: 0;
+    top: 0;
+    -webkit-transition: 0.8s all ease;
+    transition: 0.8s all ease;
+}
+
+.more_serves a {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    border: 1px solid #000;
+    font-size: 18px;
+    cursor: pointer;
+    text-align: center;
+    color: #333;
+    line-height: 72px;
+    padding: 0 37px;
+    position: relative;
+    -webkit-transition: 0.8s all ease;
+    transition: 0.8s all ease;
+}
+
+.more_serves a span {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    -webkit-transition: 0.8s all ease;
+    transition: 0.8s all ease;
+}
+
+.more_serves a:hover {
+    border-color: #eee;
+}
+
+.more_serves a:hover:before {
+    width: 100%;
+}
+
+.more_serves a:hover span {
+    color: #fff;
+}
+
+
+/*对比图*/
+
+.space_img {
+    width: 1146px;
+    height: 614px;
+    margin: 0 auto;
+    border: 1px solid #ededed;
+    margin-top: 35px;
+}
+
+.space_img_tittext {
+    height: 126px;
+    text-align: center;
+    font-size: 0;
+}
+
+.space_img_tittext h2 {
+    font-size: 20px;
+    color: #333;
+    line-height: 70px;
+    margin-top: 10px;
+}
+
+.space_img_tittext span {
+    display: inline-block;
+    font-size: 12px;
+    line-height: 10px;
+    padding: 0 15px;
+    color: #999;
+    border-left: 1px dashed #999;
+}
+
+.space_img_tittext span:first-child {
+    border-left: none;
+}
+
+

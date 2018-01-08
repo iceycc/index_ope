@@ -20,6 +20,8 @@ h6 {
 }
 input {
   font-family: "Microsoft YaHei", "STHeitiSC-Medium", "Droid Sans Fallback";
+  outline: none;
+  border: none;
 }
 input::-webkit-search-cancel-button {
   display: none;
@@ -119,8 +121,6 @@ a {
 .banner .login .login_box input {
   width: 140px;
   height: 38px;
-  outline: none;
-  border: none;
 }
 .banner .login .login_box .info_input {
   display: inline-block;
@@ -164,7 +164,9 @@ a {
 /*选装修 B*/
 .choose_decorate {
   /*叠加轮播*/
-  /*装修管家 装修日记 */
+  /*装修管家 bar*/
+  /*装修数据框*/
+  /*管家主题介绍*/
 }
 .choose_decorate ul {
   width: 100%;
@@ -201,10 +203,255 @@ a {
   margin-top: 60px;
   background: #ccc;
 }
-.choose_decorate .manager_bg {
+.choose_decorate .manager_bar {
   width: 100%;
-  height: 1565px;
+  height: 1549px;
   margin-top: 120px;
   background: url("../img/manager_bar.png") no-repeat center center;
 }
+.choose_decorate .manager_bar_c {
+  position: relative;
+  height: 1549px;
+}
+.choose_decorate .dec_data {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 300px;
+  text-align: center;
+}
+.choose_decorate .dec_data .dec_data_bg {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background: #333;
+  opacity: 0.5;
+  z-index: 0;
+}
+.choose_decorate .dec_data .t1 {
+  font-size: 14px;
+}
+.choose_decorate .dec_data .t1 span {
+  font-size: 54px;
+}
+.choose_decorate .dec_data .t2 {
+  font-size: 16px;
+}
+.choose_decorate .dec_data ul {
+  position: relative;
+  color: #fff;
+  padding-top: 0px;
+  width: 200px;
+  height: ;
+  z-index: 1;
+}
+.choose_decorate .dec_data li {
+  padding-top: 58px;
+  width: 100%;
+  height: 116px;
+}
+.choose_decorate .dec_data li:nth-child(-n+4) {
+  border-bottom: 1px dashed #fff;
+}
+.choose_decorate .dec_main {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 683px;
+  font-size: 0;
+  background: #fff;
+}
+.choose_decorate .dec_main .dec_note ul {
+  width: 1220px;
+  padding-top: 50px;
+}
+.choose_decorate .dec_main .dec_note ul li {
+  display: inline-block;
+  vertical-align: top;
+  width: 536px;
+}
+.choose_decorate .dec_main .dec_note ul li img:first-child {
+  vertical-align: top;
+  margin-right: 15px;
+}
+.choose_decorate .dec_main .dec_note ul li:first-child {
+  margin-right: 50px;
+}
+.choose_decorate .dec_main .dec_note ul .dec_info {
+  height: 57px;
+  font-size: 16px;
+  line-height: 57px;
+  color: #555;
+}
+.choose_decorate .dec_main .dec_note ul .dec_info i {
+  display: inline-block;
+  width: 0;
+  height: 20px;
+  margin: 0 20px;
+  vertical-align: middle;
+  border-left: 1px dashed #ccc;
+}
+.choose_decorate .dec_main .dec_note ul .dec_mes {
+  text-align: center;
+}
+.choose_decorate .dec_main .dec_note ul .dec_mes .dec_mes_title {
+  display: inline-block;
+  height: 60px;
+  width: 434px;
+  font-size: 16px;
+  color: #333;
+  line-height: 60px;
+  text-align: left;
+  border-top: 1px solid #ddd;
+}
+.choose_decorate .dec_main .dec_note ul .dec_mes .dec_mes_title .line {
+  display: inline-block;
+  width: 0px;
+  height: 24px;
+  margin: 0 20px;
+  vertical-align: middle;
+  border-left: 2px solid #f76d2b;
+}
+.choose_decorate .dec_main .dec_note ul .dec_mes .dec_mes_detail {
+  font-size: 14px;
+  color: #888;
+  line-height: 27px;
+  text-align: left;
+  padding-left: 158px;
+}
+.choose_decorate .dec_main .dec_note .more_dec_note {
+  width: 100%;
+  padding-top: 30px;
+}
+.choose_decorate .dec_main .dec_note .more_dec_note a {
+  display: block;
+  width: 126px;
+  height: 37px;
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 37px;
+  color: #fff;
+  text-align: center;
+  background: #f76d2b;
+}
+.choose_decorate .dec_main .dec_join_bar {
+  width: 1191px;
+  height: 72px;
+  margin-top: 34px;
+  padding-top: 28px;
+  padding-left: 29px;
+  background: #333;
+}
+.choose_decorate .dec_main .dec_join_bar .left_text {
+  width: 285px;
+  height: 44px;
+  display: inline-block;
+  border-right: 1px dashed #ccc;
+}
+.choose_decorate .dec_main .dec_join_bar .left_text p:first-child {
+  font-size: 18px;
+  color: #f76d2b;
+  padding-bottom: 10px;
+}
+.choose_decorate .dec_main .dec_join_bar .left_text p:last-child {
+  font-size: 14px;
+  color: #fff;
+}
+.choose_decorate .dec_main .dec_join_bar .right_login_box {
+  display: inline-block;
+  padding-top: 2px;
+  vertical-align: top;
+}
+.choose_decorate .dec_main .dec_join_bar .right_login_box input {
+  background: rgba(0, 0, 0, 0);
+}
+.choose_decorate .dec_main .dec_join_bar .right_login_box div {
+  display: inline-block;
+  width: 120px;
+  height: 38px;
+  line-height: 40px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding: 0 20px;
+  margin-left: 15px;
+}
+.choose_decorate .dec_main .dec_join_bar .right_login_box div:first-child {
+  margin-left: 30px;
+}
 /*选装修 E*/
+/* 灵感图库*/
+.inspiration_pics {
+  width: 100%;
+}
+.inspiration_pics .inspics_tab_button {
+  padding-top: 66px;
+  text-align: center;
+}
+.inspiration_pics .inspics_tab_button li {
+  display: inline-block;
+  width: 120px;
+  height: 24px;
+  font-size: 18px;
+  color: #333;
+}
+.inspiration_pics .inspics_tab_button li:nth-child(2) {
+  border-left: 1px dashed #333;
+  border-right: 1px dashed #333;
+}
+.inspiration_pics .inspics_tap_small {
+  text-align: center;
+}
+.inspiration_pics .inspics_tap_small li {
+  display: inline-block;
+  font-size: 14px;
+}
+.inspiration_pics .ins_pics {
+  margin: 0 auto;
+  padding: 20px;
+  width: 1220px;
+}
+.inspiration_pics .ins_pics div {
+  margin-bottom: 20px;
+  display: inline-block;
+  vertical-align: top;
+  width: 100px;
+}
+.inspiration_pics .ins_pics .dec_pic1 {
+  width: 100px;
+  height: 100px;
+  border-bottom: 2px solid #fff;
+  background: #ccc;
+}
+.inspiration_pics .ins_pics .dec_pic2 {
+  width: 100px;
+  height: 120px;
+  border-bottom: 2px solid #fff;
+  background: #ccc;
+}
+.inspiration_pics .ins_pics .dec_pic3 {
+  width: 100px;
+  height: 50px;
+  border-bottom: 2px solid #fff;
+  background: #ccc;
+}
+.inspiration_pics .ins_pics .dec_pic4 {
+  width: 100px;
+  height: 60px;
+  border-bottom: 2px solid #fff;
+  background: #ccc;
+}
+.inspiration_pics .ins_pics .dec_pic5 {
+  width: 100px;
+  height: 150px;
+  border-bottom: 2px solid #fff;
+  background: #ccc;
+}
+.inspiration_pics .ins_pics .dec_pic6 {
+  width: 100px;
+  height: 300px;
+  border-bottom: 2px solid #fff;
+  background: #ccc;
+}
