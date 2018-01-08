@@ -2,6 +2,12 @@
     margin: 0;
     padding: 0;
 }
+body{
+    margin:0 auto;
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight: normal;
+}
 
 .index_main,.ope_top{
     font-family: "Microsoft YaHei", "STHeitiSC-Medium", "Droid Sans Fallback";
@@ -20,17 +26,41 @@ a{
     color:#aaa;
 }
 
-/* 广告栏*/
+.inline_block{
+    display: inline-block;
+}
+
+
+
+
+
+/* 广告栏 B*/
 .banner{
     height: 590px;
-    width: 100%;
+    // width: 100%;
     position: relative;
+    /*居中的bannert图片*/
     .bg_pic{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
         height: 100%;
-        background: url('../images/banner.png') no-repeat ;
-        background-size:cover;
+        .cover_img{
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            overflow: hidden;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background: url('../images/banner.png') no-repeat;
+        }
     }
-    /*报名框*/
+    /*报名模块*/
     .login_bar{
         position: absolute;
         left:0;
@@ -43,25 +73,141 @@ a{
     }
     .login{
         height: 100%;
-        background-color:red;
-        line-height: 100px;
+        /*左侧*/
         .free_take{
-            height: 100%;
-            width: 460px;
-            background-color:yellow;
-
+            height: 78px;
+            // width: 440px;
+            padding-top:22px; 
+            display: inline-block;           
         }
         img{
-            width: 84px;
-            height: 84px;
-            /*垂直居中*/
+            width: 78px;
+            height: 78px;          
             display: inline-block;
-            vertical-align: middle            
+            vertical-align: top;
         }
-
-    }
-
-    
+        .text{
+            display: inline-block;
+            height: 78px;
+            padding-left:32px;   
+            p:first-child{
+                color:#ff721f;
+                font-size:18px;
+                height: 30px;
+                line-height:30px;
+            } 
+            p:last-child{
+                color:#fff;
+                font-size:12px;
+                height: 28px;
+                width: none;
+                line-height:28px;
+            } 
+        }
+        /*line*/
+        .line{
+            height: 43px;
+            display: inline-block;
+            margin-left:30px;
+            border-left: 1px dashed #ccc
+        }
+        // HR{
+        //     display: inline-block;
+        // }
+        /*右侧*/
+        .login_box{
+            display:inline-block;
+            vertical-align: bottom; 
+            height: 70px;  
+            padding-left: 30px;
+            padding-top:30px;         
+            input{
+                width: 140px;
+                height: 38px;
+                outline: none;
+                border:none;
+            }
+            .info_input{
+                display:inline-block;
+                // 去除这里的话 文字会影响布局
+                vertical-align:top;
+                padding-left:20px;
+                padding-right:20px;
+                line-height: 40px;
+                width:140px;
+                height:40px;
+                background-color:#fff;
+                margin-right:18px;
+                border-radius: 20px;
+            }
+            .click_get{
+                outline: none;
+                border: none;
+                width:112px;
+                height:40px;
+                background-color:#ff721f;
+                border-radius:20px;
+                
+                
+            }
+        }
+    }    
 
 }
+/*广告栏 E*/ 
+
+/*标题*/
+.com_title{
+    text-align: center;
+    padding-top:65px;
+  h2{
+    font-size:36px;
+    color:#585657;
+    height: 64px;
+    line-height:64px;
+    border-bottom:1px solid #a5a5a5;
+  }  
+  p{
+    font-size:14px;
+    color:#848484;
+    height: 32px;
+    line-height:32px;
+  }
+}
+
+
+/*选装修 B*/
+.choose_decorate{
+    ul{        
+        width:100%;    
+        display: inline-block;
+        padding-top:50px;
+        text-align: center;
+        font-size:0;
+    }
+    .choose_decorate_tap li{        
+        height:38px;
+        width:128px;
+        line-height: 40px;        
+        display:inline-block;
+        text-align: center;
+        border: 1px solid #ededed;
+        border-radius: 18px;
+        &:nth-child(-n+5){
+            margin-right: 20px;
+        }
+        a{
+            font-size:14px;
+            color:#333;
+        }
+        &:last-child{
+            background-color: #ff721f;
+            a{
+                color:#fff;
+            }
+        }
+    }
+}
+/*选装修 E*/
+
 
