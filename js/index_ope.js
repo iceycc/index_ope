@@ -15,8 +15,8 @@ $(function() {
     var $container = $('#masonry');
     $container.imagesLoaded(function() {
         $container.masonry({
-                itemSelector: '.dec_pic',
-                gutter: 20,
+            itemSelector: '.dec_pic',
+                gutter: 25,
                 isAnimated: true,
             });
      });
