@@ -5,8 +5,8 @@
         this.body   = jq("body");
         this.WidthDefaule = '473px';//560
         this.HeightDefaule = '293px';//224
-        this.activeWidth = '746px';//640
-        this.activeHeight = '329px';//270
+        this.activeWidth = '746px';//640  746
+        this.activeHeight = '329px';//270 
         if (this.parent.length <= 0) {
             return false;
         }

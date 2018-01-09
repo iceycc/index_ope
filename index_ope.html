@@ -15,6 +15,8 @@
     <link type="text/css" rel="stylesheet" href="css/index_ope.css">
     <link type="text/css" rel="stylesheet" href="css/owner_say.css">
 
+    <link rel="stylesheet" type="text/css" href="css/iconfont.css">
+
 </head>
 
 <body>
@@ -28,7 +30,9 @@
         <!-- banner -->
         <div class="banner">
             <div class="bg_pic">
-                <div class="cover_img"></div>
+                <div class="cover_img">
+                    <img src="./img/banner.jpg" alt="">
+                </div>
             </div>
             <!-- 报名框 -->
             <div class="login_bar">
@@ -49,18 +53,23 @@
                     <div class="login_box">
                         <form action="">
                             <div class="info_input">
+                                <i class="iconfont icon-dingwei"></i>
                                 <label for=""></label>
                                 <input type="text" placeholder="北京">
                             </div>
                             <div class="info_input">
+                                <i class="iconfont icon-geren"></i>
                                 <label for=""></label>
                                 <input type="text" placeholder="您的称呼">
                             </div>
                             <div class="info_input">
+                                <i class="iconfont icon-dianhua"></i>
                                 <label for=""></label>
                                 <input type="text" placeholder="你的联系方式">
                             </div>
-                            <button class="click_get" type="submit">点击获取</button>
+                            <button class="click_get" type="submit">点击获取
+                                <i class="iconfont icon-xiangyou"></i>
+                            </button>
                         </form>
                     </div>
                 </div>
@@ -100,7 +109,33 @@
             </ul>
 
             <!-- 叠加轮播   -->
-            <div class="dec_swiper"></div>
+            <!--装修前 tab s-->
+            <div class="befor_decorate_tab">
+                <ul class="bf_dec_content">
+                    <li class="be_de_list">
+                        <img src="./img/lunbo1.jpg" alt="">
+                    </li>
+                    <li class="be_de_list">
+                        <img src="./img/lunbo1.jpg" alt="">
+                    </li>
+                    <li class="be_de_list">
+                        <img src="./img/lunbo1.jpg" alt="">
+                    </li>
+                    <!-- <li class="be_de_list">
+
+                        </li>
+                        <li class="be_de_list">
+
+                        </li> -->
+
+
+                </ul>
+                <div class="bf_dec_button">
+                    <div class="left_minu"></div>
+                    <div class="right_minu"></div>
+                </div>
+            </div>
+            <!--装修前 tab e-->
 
             <!-- 装修管家banner  -->
             <div class="manager_bar">
@@ -199,25 +234,32 @@
                             </div>
                             <div class="right_login_box">
                                 <div>
+                                    <i class="icon-geren iconfont"></i>
                                     <label for=""></label>
-                                    <input class="yourname" type="text" placeholder="您的称呼">
+                                    <input class="yourname" type="text" placeholder=" 您的称呼">
                                 </div>
                                 <div>
+                                    <i class="icon-dianhua iconfont"></i>
+
                                     <label for=""></label>
-                                    <input class="yourtel" type="text" placeholder="您的联系方式">
+                                    <input class="yourtel" type="text" placeholder=" 您的联系方式">
                                 </div>
                                 <div>
                                     <!-- TODO: 下拉框的  -->
+                                    <i class="icon-dingwei iconfont"></i>
                                     <label for=""></label>
-                                    <input class="yourtel" type="text" placeholder="所在地区">
+                                    <input class="yourtel" type="text" placeholder=" 所在地区">
+                                    <i class="icon-sj iconfont my_sjx"></i>
                                 </div>
                                 <div>
+                                    <i class="icon-four-squares iconfont"></i>
                                     <label for=""></label>
-                                    <input class="yourtel" type="text" placeholder="管家服务器类型">
+                                    <input class="yourtel" type="text" placeholder=" 管家服务器类型">
+                                    <i class="icon-sj iconfont my_sjx"></i>
+                                    
                                 </div>
-                                <div>
-                                    <label for=""></label>
-                                    <input class="yourtel" type="text" placeholder="您的联系方式">
+                                <div class="btn_join">   
+                                        申请管家服务
                                 </div>
                             </div>
                         </div>
@@ -771,12 +813,46 @@
 
             <!-- 关于我们展示 -->
             <div class="about_us_show">
+                <ul>
+                    <li class="show_detail">
+                        <a href="javascript:;">
+                            <img src="./img/about_us (1).jpg" alt="">
+                        </a>
+                        <div class="news_from log_bg1">
+                            <span class="news_time">2017-03-16</span>
+                        </div>
+                        <p class="news_info">优装美家入选2016年中国独角兽企业榜单</p>
+                    </li>
+                    <li class="show_detail">
+                        <a href="javascript:;">
+                            <img src="./img/about_us (2).jpg" alt="">
+                        </a>
+                        <div class="news_from log_bg2">
+                            <span class="news_time">2017-03-16</span>
+                        </div>
+                        <p class="news_info">优装美家入选2016年中国独角兽企业榜单</p>
+                    </li>
+                    <li class="show_detail">
+                        <a href="javascript:;">
+                            <img src="./img/about_us (3).jpg" alt="">
+                        </a>
+                        <div class="news_from log_bg3">
+                            <span class="news_time">2017-03-16</span>
+                        </div>
+                        <p class="news_info">优装美家入选2016年中国独角兽企业榜单</p>
+                    </li>
 
+                </ul>
             </div>
         </div>
 
         <!-- 底部bannner -->
-        <div class="footer_banner"></div>
+        <div class="footer_banner">
+            <div class="footer_bg">
+                <img src="./img/bg2.jpg" alt="">
+            </div>
+            <div class="data1"></div>
+        </div>
 
     </div>
     <!-- footer 公共样式-->
@@ -786,6 +862,7 @@
 </html>
 <script type="text/javascript" src="./base/js/jquery-1.8.3.min.js"></script>
 <script type="text/javascript" src="./base/js/jquery.lazyload.js"></script>
+<script src="./js/posterTvGrid.js"></script>
 <!-- 原生瀑布流 -->
 <!-- <script src="path/waterfall.js"></script> -->
 <!-- jQuery瀑布流插件 Masonry -->

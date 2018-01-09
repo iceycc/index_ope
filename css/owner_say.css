@@ -565,7 +565,7 @@
 .space_img_tittext span {
     display: inline-block;
     font-size: 12px;
-    line-height: 10px;
+    line-height: 10px; 
     padding: 0 15px;
     color: #999;
     border-left: 1px dashed #999;
@@ -576,3 +576,116 @@
 }
 
 
+
+
+
+/* 装修前  B */
+/*装修前 tab s*/
+.befor_decorate_tab{
+    position: relative;
+    width: 1220px;
+    margin:0 auto;
+    height: 800px;
+}
+.bf_dec_content{
+    position: relative;
+    overflow-x: hidden;
+    width:100%;
+    height:100%;
+}
+.bf_dec_content:hover{
+
+}
+.be_de_list{
+    width:880px;
+    height:646px;
+    /* border:1px solid #e1e1e1; */
+    position: absolute;
+    left:50%;
+    top:50%;
+    margin-left:-440px;
+    margin-top:-250px;
+    opacity:0;
+    z-index:0;
+    -webkit-transition: 0.2s all ease;
+    -webkit-transition: 0.5s all ease;
+    transition: 0.5s all ease;
+    /* padding:0 20px; */
+    overflow: hidden;
+    background: #fff;
+}
+
+.be_de_list img{
+    width: 100%;
+    /* height: 100%; */
+}
+
+/* .be_de_list.bf_dec_c{
+    border-color: #f60;
+    -webkit-box-shadow: 0 0 5px #ddd;
+            box-shadow: 0 0 5px #ddd;
+} */
+
+.bf_dec_l1,.bf_dec_c,.bf_dec_r1{
+    opacity:1;
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+}
+
+
+
+.bf_dec_c{
+    z-index:3;
+}
+.bf_dec_l1,.bf_dec_r1{
+    width:800px;
+    height:525px;
+    z-index:2;
+    margin-top:-210px;
+}
+
+
+.bf_dec_l1{
+    left:20px;
+    margin-left:0;
+}
+.bf_dec_r1{
+    left:auto;
+    /*right:240px;*/
+    right:20px;
+    margin-left:0;
+}
+
+
+
+.bf_dec_button .left_minu,.bf_dec_button .right_minu{
+    cursor: pointer;
+    z-index: 10;
+    position: absolute;
+    top: 50%;
+    width: 42px;
+    height: 75px;
+    margin-top: -23px;
+    opacity: 0.3;
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+    background: url(../img/main-img/contrast_silder.png) no-repeat;
+}
+.bf_dec_button .left_minu{
+    left:0;
+    background-position:0 -79px;
+}
+.bf_dec_button .right_minu{
+    right:0;
+    background-position:0 0;
+}
+.bf_dec_button .left_minu:hover,.bf_dec_button .right_minu:hover{
+    opacity:1;
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+}
+
+
+
+/*装修前 tab e*/
+/* 装修前 E */
