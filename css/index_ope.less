@@ -215,6 +215,50 @@ a{
 }
 
 
+/*动画*/ 
+@keyframes rubberBand {
+    from {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+
+    30% {
+        -webkit-transform: scale3d(1.25, 0.75, 1);
+        transform: scale3d(1.25, 0.75, 1);
+    }
+
+    40% {
+        -webkit-transform: scale3d(0.75, 1.25, 1);
+        transform: scale3d(0.75, 1.25, 1);
+    }
+
+    50% {
+        -webkit-transform: scale3d(1.15, 0.85, 1);
+        transform: scale3d(1.15, 0.85, 1);
+    }
+
+    65% {
+        -webkit-transform: scale3d(.95, 1.05, 1);
+        transform: scale3d(.95, 1.05, 1);
+    }
+
+    75% {
+        -webkit-transform: scale3d(1.05, .95, 1);
+        transform: scale3d(1.05, .95, 1);
+    }
+
+    to {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+.rubberBand {
+    -webkit-animation-name: rubberBand;
+    animation-name: rubberBand;
+}
+
+
 /*选装修 B*/
 .choose_decorate{
     ul{        
@@ -224,16 +268,23 @@ a{
         text-align: center;
         font-size:0;
     }
-    .choose_decorate_tap li{        
+    .sched_list{  
+        display:inline-block;      
         height:38px;
         width:128px;
+        margin-left: 20px;
         line-height: 40px;        
-        display:inline-block;
         text-align: center;
         border: 1px solid #ededed;
         border-radius: 18px;
-        &:nth-child(-n+5){
-            margin-right: 20px;
+        vertical-align: middle;
+        cursor: pointer;
+        &:first-child{
+            margin-left: 0;
+        }
+        &:hover{
+            animation: rubberBand 0.8s ease-in;
+
         }
         a{
             font-size:14px;

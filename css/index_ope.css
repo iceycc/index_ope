@@ -186,6 +186,41 @@ a {
   height: 32px;
   line-height: 32px;
 }
+/*动画*/
+@keyframes rubberBand {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+.rubberBand {
+  -webkit-animation-name: rubberBand;
+  animation-name: rubberBand;
+}
 /*选装修 B*/
 .choose_decorate {
   /*叠加轮播*/
@@ -200,26 +235,32 @@ a {
   text-align: center;
   font-size: 0;
 }
-.choose_decorate .choose_decorate_tap li {
+.choose_decorate .sched_list {
+  display: inline-block;
   height: 38px;
   width: 128px;
+  margin-left: 20px;
   line-height: 40px;
-  display: inline-block;
   text-align: center;
   border: 1px solid #ededed;
   border-radius: 18px;
+  vertical-align: middle;
+  cursor: pointer;
 }
-.choose_decorate .choose_decorate_tap li:nth-child(-n+5) {
-  margin-right: 20px;
+.choose_decorate .sched_list:first-child {
+  margin-left: 0;
 }
-.choose_decorate .choose_decorate_tap li a {
+.choose_decorate .sched_list:hover {
+  animation: rubberBand 0.8s ease-in;
+}
+.choose_decorate .sched_list a {
   font-size: 14px;
   color: #333;
 }
-.choose_decorate .choose_decorate_tap li:last-child {
+.choose_decorate .sched_list:last-child {
   background-color: #ff721f;
 }
-.choose_decorate .choose_decorate_tap li:last-child a {
+.choose_decorate .sched_list:last-child a {
   color: #fff;
 }
 .choose_decorate .dec_swiper {

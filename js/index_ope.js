@@ -54,6 +54,35 @@ function beforTab() {
 
 
 
+// 方法调用
+function pluginUnit() {
+    //图片懒加载
+    //$("img.lazy").lazyload();
+
+    //placeholder
+    // $('input, textarea').placeholder();
+
+    //select
+    // $.selectFun('select_', '2');
+
+
+    // 页面内容移动
+
+    var revealData1 = {
+        duration: 1000,
+        origin: 'bottom',
+        rotate: { x: 0, y: 0, z: 0 },
+        distance: '50px',
+        scale: 1,
+        easing: 'linear'
+    };
+    if (!(/msie [6|7|8|9]/i.test(navigator.userAgent))) {
+        var sr = ScrollReveal();
+        sr.reveal('.move_top', revealData1);
+        // sr.reveal('.principal .principal_list', revealData1, 200);
+    }
+}
+
 
 $(function () {
     var $container = $('#masonry');
@@ -66,4 +95,5 @@ $(function () {
     });
     clickRes()
     beforTab()
+    pluginUnit()
 })
