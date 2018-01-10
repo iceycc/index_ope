@@ -11,6 +11,11 @@
     margin: 0;
     padding: 0;
 }
+// *, *:before, *:after {
+//     -moz-box-sizing: border-box;
+//     -webkit-box-sizing: border-box;
+//     box-sizing: border-box;
+// }
 body{
     margin:0 auto;
 }
@@ -297,14 +302,8 @@ a{
             }
         }
     }
-    /*叠加轮播*/
-    .dec_swiper{
-        width: 100%;
-        height:640px;
-        margin-top:60px;
-        background: #ccc;
 
-    }
+
     /*装修管家 bar*/ 
 
     
@@ -373,38 +372,61 @@ a{
         height: 683px;
         font-size: 0;
         background: #fff;
-        // 装修日记
+        // 装修日记11
         .dec_note{
             ul{
                 width: 1220px;
                 padding-top:50px;
                 li{
                     display: inline-block;
-                    vertical-align: top;
+                    vertical-align: middle;
                     width: 536px;
-                    img:first-child{
-                        vertical-align: top;
-                        margin-right: 15px;
-                        
-                    }
-                    &:first-child{
-                        margin-right: 50px;
-                    }
                 }
-                .dec_info{
-                    height: 57px;
-                    font-size:16px;
-                    line-height: 57px;
-                    color:#555;
-                    i{
+                .dec_main_db{
+                    display: inline-block;
+                    *display: inline;
+                    *zoom: 1;
+                    vertical-align: middle;
+                    .dec_img{
                         display: inline-block;
-                        width: 0;
-                        height: 20px;                    
-                        margin:0 20px;
+                        *display: inline;
+                        *zoom: 1;
+                        width: 260px;
                         vertical-align: middle;
-                        border-left:1px dashed #ccc;                   
-                        
+                        border: 1px solid #ededed;
+
+                        img{
+                            width: 100%;
+                            -webkit-transition: 0.5s all ease;
+                            transition: 0.5s all ease;
+                        }
+                        p{
+                            line-height: 50px;
+                            color: #999;
+                            font-size: 18px;
+                            text-align: center;
+                            height: 50px;
+                        }
+
                     }
+                    .dec_img_bor{
+                        display: inline-block;
+                        width: 100%;
+                        overflow: hidden;
+                    }
+                    .dec_img_l,.dec_img_r{                  
+                        
+                        vertical-align: middle;
+                        overflow: hidden;
+                        cursor: pointer;
+                        img:hover {
+                            -webkit-transform: scale(1.1);
+                            transform: scale(1.1);
+                        }
+                    }
+
+                }
+
                 }
                 .dec_mes{
                     text-align: center;
@@ -467,9 +489,20 @@ a{
                 border-right: 1px dashed #ccc;
                 p{
                     &:first-child{
+                        position: relative;
                         font-size:18px;
                         color:#f76d2b;
                         padding-bottom: 10px;
+                        padding-left:10px;
+                        &::before{
+                            position: absolute;
+                            content:"";
+                            width: 3px;
+                            height: 20px;
+                            left: 0px;
+                            top:0px;
+                            background: #fff;
+                        }
                     }
                     &:last-child{
                         font-size:14px;
@@ -487,14 +520,20 @@ a{
                 input{
                     font-size:14px;
                     height: 40px;
-                    padding-left:15px; 
+                    width: 100%;
+                    -moz-box-sizing: border-box;
+                    -webkit-box-sizing: border-box;
+                    box-sizing: border-box;
+                    padding-left:20px;
+                    padding-right:10px;
+                    color: #fff;
                     background: RGBA(0,0,0,0);
                 }
                 div{
                     position: relative;
                     display: inline-block;
-                    width: 130px;
-                    height: 40px;
+                    width: 128px;
+                    height: 38px;
                     line-height: 40px;
                     border:1px solid #ccc;
                     border-radius: 20px;
@@ -506,7 +545,7 @@ a{
 
                     i{
                         position: absolute;
-                        left: 18px;
+                        left: 16px;
                         top:1px;
                         display: block;
                         width: 17px;
@@ -523,8 +562,25 @@ a{
                     }
                 }
                 .btn_join{
+                    
+                    box-sizing: border-box;
+                    width: 146px;
+                    padding-left:15px;
                     font-size: 14px;
                     color:#dedede;
+                    i.o_sjx{
+                        position: absolute;
+                        left: auto;
+                        right:7px;
+                        top:5px;
+                        width:30px;
+                        height:30px;
+                        background-color:#f76d2b;
+                        text-align: center;
+                        line-height:30px;
+                        color:#fff;
+                        border-radius: 15px;
+                    }
                 }
             }
         }       
