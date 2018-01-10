@@ -718,7 +718,8 @@
 }
 .cs_dev_info .dev_info_l{
     display: inline-block;
-    
+    *display: inline;
+    *zoom: 1;
     vertical-align: middle;
     color:#fff;
     font-size:0px;
@@ -742,6 +743,8 @@
 } 
 .cs_dev_info .dev_info_r{
     display: inline-block;
+    *display: inline;
+    *zoom: 1;
     width: 29%;
     /* display: -webkit-inline-box; */
     vertical-align: middle;
@@ -751,6 +754,8 @@
 }
 .cs_dev_info .dev_info_r .pice{
     display: inline-block;
+    *display: inline;
+    *zoom: 1;
     text-align: center;
     
     font-size:34px;
@@ -760,6 +765,8 @@
 }
 .cs_dev_info .dev_info_r .pice span{
     display: inline-block;
+    *display: inline;
+    *zoom: 1;
     font-size:70px;
     color:#ff4c4c;
 

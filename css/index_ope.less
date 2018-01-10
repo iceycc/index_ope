@@ -1,12 +1,4 @@
-// 字体图标
-
-
-
-
-
-
-
-// 
+// 字体图标 
 * {
     margin: 0;
     padding: 0;
@@ -46,9 +38,29 @@ a{
     color:#aaa;
 }
 
-.inline_block{
+
+// inline-block兼容
+.inline-block(){
     display: inline-block;
+    *display: inline;
+    *zoom: 1;
 }
+// box-sizing:兼容   区别对待 或者直接给 * *::before  *::after 全局添加 盒模型
+.content-box() {
+    -moz-box-sizing: content-box;  
+    -webkit-box-sizing: content-box; 
+    -o-box-sizing: content-box; 
+    -ms-box-sizing: content-box; 
+    box-sizing: content-box; 
+ } 
+ .border-box() {
+    -moz-box-sizing: border-box;  
+    -webkit-box-sizing: border-box; 
+    -o-box-sizing: border-box; 
+    -ms-box-sizing: border-box; 
+    box-sizing: border-box; 
+ }
+
 
 
 
@@ -88,19 +100,18 @@ a{
         height: 100%;
         /*左侧*/
         .free_take{
+            .inline-block();
             height: 78px;
-            // width: 440px;
             padding-top:22px; 
-            display: inline-block;           
         }
         img{
             width: 78px;
             height: 78px;          
-            display: inline-block;
+            .inline-block();
             vertical-align: top;
         }
         .text{
-            display: inline-block;
+            .inline-block();
             height: 78px;
             padding-left:32px;   
             p:first-child{
@@ -120,12 +131,12 @@ a{
         /*line*/
         .line{
             height: 43px;
-            display: inline-block;
+            .inline-block();
             margin-left:30px;
             border-left: 1px dashed #ccc
         }
         // HR{
-        //     display: inline-block;
+        //     .inline-block();
         // }
         /*右侧*/
         .login_box{
@@ -183,7 +194,7 @@ a{
                 border-radius:20px;
                 i{
                     position: absolute;
-                    display: inline-block;
+                    .inline-block();
                     width: 30px;
                     height: 30px;
                     top: 4px;
@@ -272,7 +283,7 @@ a{
 .choose_decorate{
     ul{        
         width:100%;    
-        display: inline-block;
+        .inline-block();
         padding-top:50px;
         text-align: center;
         font-size:0;
@@ -382,7 +393,7 @@ a{
                 padding-top:50px;
                 font-size: 0;
                 li{
-                    display: inline-block;
+                    .inline-block();
                     vertical-align: middle;
                     width: 536px;
                     &:first-child{
@@ -390,7 +401,7 @@ a{
                     }
                 }
                 .line{
-                    display: inline-block;
+                    .inline-block();
                     vertical-align: bottom;
                     height: 20px;
                     margin-left:7px;
@@ -400,12 +411,12 @@ a{
                 }
                 .dec_main_db{
                     position: relative;
-                    display: inline-block;
+                    .inline-block();
                     *display: inline;
                     *zoom: 1;
                     vertical-align: middle;
                     .dec_img{
-                        display: inline-block;
+                        .inline-block();
                         *display: inline;
                         *zoom: 1;
                         width: 260px;
@@ -431,7 +442,7 @@ a{
 
                     }
                     .dec_img_bor{
-                            display: inline-block;
+                            .inline-block();
                             width: 100%;
                             overflow: hidden;
 
@@ -460,7 +471,7 @@ a{
                     font-size: 0;
                     opacity: 0;
                     .cover_info{
-                        display: inline-block;
+                        .inline-block();
                         width: 220px;
                         height: 92px;
                         margin-top:82px;
@@ -471,7 +482,7 @@ a{
                         line-height:28px;                        
                     }
                     .manager_pic{
-                        display: inline-block;
+                        .inline-block();
                         vertical-align: middle;
                         width: 60px;
                         height:60px;
@@ -487,7 +498,7 @@ a{
                         }
                     }
                     .manager_info{
-                        display: inline-block;
+                        .inline-block();
                         vertical-align: top;
                         padding-left:10px;
                         padding-top:20px;                        
@@ -501,7 +512,7 @@ a{
                     text-align: center;
     
                     .dec_mes_title{
-                        display: inline-block;
+                        .inline-block();
                         height: 60px;
                         width: 434px;
                         font-size:16px;
@@ -510,7 +521,7 @@ a{
                         text-align: left;
                         border-top:1px solid #ddd;
                         .line{
-                            display: inline-block;
+                            .inline-block();
                             width: 0px;
                             height: 24px;
                             margin:0 20px;
@@ -554,7 +565,7 @@ a{
             .left_text{
                 width: 285px;
                 height: 44px;
-                display: inline-block;
+                .inline-block();
                 border-right: 1px dashed #ccc;
                 p{
                     &:first-child{
@@ -582,7 +593,7 @@ a{
             }
             // 1111
             .right_login_box{
-                display: inline-block;
+                .inline-block();
                 padding-top:2px;
                 vertical-align: top;
                 font-size:0px;
@@ -600,7 +611,7 @@ a{
                 }
                 div{
                     position: relative;
-                    display: inline-block;
+                    .inline-block();
                     width: 128px;
                     height: 38px;
                     line-height: 40px;
@@ -673,7 +684,7 @@ a{
         text-align: center;
         li{
             position: relative;
-            display: inline-block;
+            .inline-block();
             width: 120px;
             height: 24px;
             font-size: 18px;
@@ -695,7 +706,7 @@ a{
                     background: #000;
                     &::after{
                         position: absolute;
-                        display: inline-block;
+                        .inline-block();
                         left:50%;
                         top:2px;
                         margin-left: -4px;
@@ -715,7 +726,7 @@ a{
         text-align: center;
         margin-top:23px;
         li{
-            display: inline-block;
+            .inline-block();
             font-size:14px;
             cursor: pointer;
             &.active{
@@ -736,7 +747,7 @@ a{
                 position: relative;
                 margin-bottom: 2px;
                 // float: left;
-                display: inline-block;
+                .inline-block();
                 vertical-align: top;
                 // font-size: 0px;
                 width: 383px;
@@ -826,7 +837,7 @@ a{
         margin: 30px auto;
         background-color: #333;
         a{
-            display: inline-block;
+            .inline-block();
             font-size: 16px;
             width: 100%;
             height:100%;
@@ -846,7 +857,7 @@ a{
             text-align: center;  
             font-size: 0;                     
           .str_det{
-              display: inline-block;
+              .inline-block();
               width: 270px;
               text-align: left;
               padding-top:20px;
@@ -901,7 +912,7 @@ a{
         font-size: 0px;
         text-align: center;
         .show_detail{
-            display: inline-block;
+            .inline-block();
             &:nth-child(-n+2){
                 margin-right:30px;
             }
@@ -911,7 +922,7 @@ a{
                 height: 60px;   
                 border-bottom:1px solid #eee; 
                 &::before{
-                    display: inline-block;
+                    .inline-block();
                     content: "";                    
                     position: absolute;
                     left: 0;

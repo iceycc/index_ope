@@ -38,9 +38,6 @@ input::-ms-clear {
 a {
   color: #aaa;
 }
-.inline_block {
-  display: inline-block;
-}
 /* 广告栏 B*/
 .banner {
   height: 590px;
@@ -76,18 +73,24 @@ a {
   /*右侧*/
 }
 .banner .login .free_take {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
   height: 78px;
   padding-top: 22px;
-  display: inline-block;
 }
 .banner .login img {
   width: 78px;
   height: 78px;
   display: inline-block;
+  *display: inline;
+  *zoom: 1;
   vertical-align: top;
 }
 .banner .login .text {
   display: inline-block;
+  *display: inline;
+  *zoom: 1;
   height: 78px;
   padding-left: 32px;
 }
@@ -107,6 +110,8 @@ a {
 .banner .login .line {
   height: 43px;
   display: inline-block;
+  *display: inline;
+  *zoom: 1;
   margin-left: 30px;
   border-left: 1px dashed #ccc;
 }
@@ -162,6 +167,8 @@ a {
 .banner .login .login_box .click_get i {
   position: absolute;
   display: inline-block;
+  *display: inline;
+  *zoom: 1;
   width: 30px;
   height: 30px;
   top: 4px;
@@ -236,6 +243,8 @@ a {
 .choose_decorate ul {
   width: 100%;
   display: inline-block;
+  *display: inline;
+  *zoom: 1;
   padding-top: 50px;
   text-align: center;
   font-size: 0;
@@ -335,6 +344,8 @@ a {
 }
 .choose_decorate .dec_main .dec_note ul li {
   display: inline-block;
+  *display: inline;
+  *zoom: 1;
   vertical-align: middle;
   width: 536px;
 }
@@ -343,6 +354,8 @@ a {
 }
 .choose_decorate .dec_main .dec_note ul .line {
   display: inline-block;
+  *display: inline;
+  *zoom: 1;
   vertical-align: bottom;
   height: 20px;
   margin-left: 7px;
@@ -383,6 +396,8 @@ a {
 }
 .choose_decorate .dec_main .dec_note ul .dec_main_db .dec_img_bor {
   display: inline-block;
+  *display: inline;
+  *zoom: 1;
   width: 100%;
   overflow: hidden;
 }
@@ -405,6 +420,8 @@ a {
 }
 .choose_decorate .dec_main .dec_note ul .dec_cover .cover_info {
   display: inline-block;
+  *display: inline;
+  *zoom: 1;
   width: 220px;
   height: 92px;
   margin-top: 82px;
@@ -416,6 +433,8 @@ a {
 }
 .choose_decorate .dec_main .dec_note ul .dec_cover .manager_pic {
   display: inline-block;
+  *display: inline;
+  *zoom: 1;
   vertical-align: middle;
   width: 60px;
   height: 60px;
@@ -431,6 +450,8 @@ a {
 }
 .choose_decorate .dec_main .dec_note ul .dec_cover .manager_info {
   display: inline-block;
+  *display: inline;
+  *zoom: 1;
   vertical-align: top;
   padding-left: 10px;
   padding-top: 20px;
@@ -440,6 +461,8 @@ a {
 }
 .choose_decorate .dec_main .dec_note .dec_mes .dec_mes_title {
   display: inline-block;
+  *display: inline;
+  *zoom: 1;
   height: 60px;
   width: 434px;
   font-size: 16px;
@@ -450,6 +473,8 @@ a {
 }
 .choose_decorate .dec_main .dec_note .dec_mes .dec_mes_title .line {
   display: inline-block;
+  *display: inline;
+  *zoom: 1;
   width: 0px;
   height: 24px;
   margin: 0 20px;
@@ -490,6 +515,8 @@ a {
   width: 285px;
   height: 44px;
   display: inline-block;
+  *display: inline;
+  *zoom: 1;
   border-right: 1px dashed #ccc;
 }
 .choose_decorate .dec_join_bar .left_text p:first-child {
@@ -514,6 +541,8 @@ a {
 }
 .choose_decorate .dec_join_bar .right_login_box {
   display: inline-block;
+  *display: inline;
+  *zoom: 1;
   padding-top: 2px;
   vertical-align: top;
   font-size: 0px;
@@ -533,6 +562,8 @@ a {
 .choose_decorate .dec_join_bar .right_login_box div {
   position: relative;
   display: inline-block;
+  *display: inline;
+  *zoom: 1;
   width: 128px;
   height: 38px;
   line-height: 40px;
@@ -593,6 +624,8 @@ a {
 .inspiration_pics .inspics_tab_button li {
   position: relative;
   display: inline-block;
+  *display: inline;
+  *zoom: 1;
   width: 120px;
   height: 24px;
   font-size: 18px;
@@ -618,6 +651,8 @@ a {
 .inspiration_pics .inspics_tab_button li.active i::after {
   position: absolute;
   display: inline-block;
+  *display: inline;
+  *zoom: 1;
   left: 50%;
   top: 2px;
   margin-left: -4px;
@@ -633,6 +668,8 @@ a {
 }
 .inspiration_pics .inspics_tap_small li {
   display: inline-block;
+  *display: inline;
+  *zoom: 1;
   font-size: 14px;
   cursor: pointer;
 }
@@ -651,6 +688,8 @@ a {
   position: relative;
   margin-bottom: 2px;
   display: inline-block;
+  *display: inline;
+  *zoom: 1;
   vertical-align: top;
   width: 383px;
 }
@@ -726,6 +765,8 @@ a {
 }
 .inspiration_pics .more_pics a {
   display: inline-block;
+  *display: inline;
+  *zoom: 1;
   font-size: 16px;
   width: 100%;
   height: 100%;
@@ -739,6 +780,8 @@ a {
 }
 .strategy_decorate .strategy_detail .str_det {
   display: inline-block;
+  *display: inline;
+  *zoom: 1;
   width: 270px;
   text-align: left;
   padding-top: 20px;
@@ -781,6 +824,8 @@ a {
 }
 .about_us .about_us_show .show_detail {
   display: inline-block;
+  *display: inline;
+  *zoom: 1;
 }
 .about_us .about_us_show .show_detail:nth-child(-n+2) {
   margin-right: 30px;
@@ -793,6 +838,8 @@ a {
 }
 .about_us .about_us_show .show_detail .news_from::before {
   display: inline-block;
+  *display: inline;
+  *zoom: 1;
   content: "";
   position: absolute;
   left: 0;
