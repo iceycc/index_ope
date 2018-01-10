@@ -2,6 +2,12 @@
   margin: 0;
   padding: 0;
 }
+i,
+b,
+s,
+u {
+  font-style: normal;
+}
 body {
   margin: 0 auto;
 }
@@ -325,13 +331,27 @@ a {
 .choose_decorate .dec_main .dec_note ul {
   width: 1220px;
   padding-top: 50px;
+  font-size: 0;
 }
 .choose_decorate .dec_main .dec_note ul li {
   display: inline-block;
   vertical-align: middle;
   width: 536px;
 }
+.choose_decorate .dec_main .dec_note ul li:first-child {
+  margin-right: 50px;
+}
+.choose_decorate .dec_main .dec_note ul .line {
+  display: inline-block;
+  vertical-align: bottom;
+  height: 20px;
+  margin-left: 7px;
+  margin-right: 7px;
+  margin-bottom: 15px;
+  border-left: 1px dashed #999;
+}
 .choose_decorate .dec_main .dec_note ul .dec_main_db {
+  position: relative;
   display: inline-block;
   *display: inline;
   *zoom: 1;
@@ -343,7 +363,6 @@ a {
   *zoom: 1;
   width: 260px;
   vertical-align: middle;
-  border: 1px solid #ededed;
 }
 .choose_decorate .dec_main .dec_note ul .dec_main_db .dec_img img {
   width: 100%;
@@ -354,8 +373,13 @@ a {
   line-height: 50px;
   color: #999;
   font-size: 18px;
-  text-align: center;
   height: 50px;
+}
+.choose_decorate .dec_main .dec_note ul .dec_main_db .dec_img p.bf {
+  text-align: right;
+}
+.choose_decorate .dec_main .dec_note ul .dec_main_db .dec_img p.af {
+  text-align: left;
 }
 .choose_decorate .dec_main .dec_note ul .dec_main_db .dec_img_bor {
   display: inline-block;
@@ -368,10 +392,48 @@ a {
   overflow: hidden;
   cursor: pointer;
 }
-.choose_decorate .dec_main .dec_note ul .dec_main_db .dec_img_l img:hover,
-.choose_decorate .dec_main .dec_note ul .dec_main_db .dec_img_r img:hover {
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
+.choose_decorate .dec_main .dec_note ul .dec_cover {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 262px;
+  background: rgba(51, 51, 51, 0.8);
+  z-index: 4;
+  font-size: 0;
+  opacity: 0;
+}
+.choose_decorate .dec_main .dec_note ul .dec_cover .cover_info {
+  display: inline-block;
+  width: 220px;
+  height: 92px;
+  margin-top: 82px;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+  font-size: 16px;
+  line-height: 28px;
+}
+.choose_decorate .dec_main .dec_note ul .dec_cover .manager_pic {
+  display: inline-block;
+  vertical-align: middle;
+  width: 60px;
+  height: 60px;
+  margin-top: 16px;
+  border-radius: 30px;
+  border: 1px solid #fff;
+  text-align: left;
+  overflow: hidden;
+}
+.choose_decorate .dec_main .dec_note ul .dec_cover .manager_pic img {
+  width: 100%;
+  height: 100%;
+}
+.choose_decorate .dec_main .dec_note ul .dec_cover .manager_info {
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 10px;
+  padding-top: 20px;
 }
 .choose_decorate .dec_main .dec_note .dec_mes {
   text-align: center;
@@ -522,22 +584,48 @@ a {
 /* 灵感图库*/
 .inspiration_pics {
   width: 100%;
-  height: 2100px;
+  height: 2150px;
 }
 .inspiration_pics .inspics_tab_button {
   padding-top: 66px;
   text-align: center;
 }
 .inspiration_pics .inspics_tab_button li {
+  position: relative;
   display: inline-block;
   width: 120px;
   height: 24px;
   font-size: 18px;
   color: #333;
+  cursor: pointer;
 }
 .inspiration_pics .inspics_tab_button li:nth-child(2) {
   border-left: 1px dashed #333;
   border-right: 1px dashed #333;
+}
+.inspiration_pics .inspics_tab_button li.active {
+  color: #000;
+}
+.inspiration_pics .inspics_tab_button li.active i {
+  position: absolute;
+  left: 50%;
+  margin-left: -30px;
+  bottom: -1px;
+  width: 60px;
+  height: 2px;
+  background: #000;
+}
+.inspiration_pics .inspics_tab_button li.active i::after {
+  position: absolute;
+  display: inline-block;
+  left: 50%;
+  top: 2px;
+  margin-left: -4px;
+  content: "";
+  width: 0;
+  height: 0;
+  border: 4px solid #FFF;
+  border-top: 4px solid #000;
 }
 .inspiration_pics .inspics_tap_small {
   text-align: center;
@@ -546,6 +634,7 @@ a {
 .inspiration_pics .inspics_tap_small li {
   display: inline-block;
   font-size: 14px;
+  cursor: pointer;
 }
 .inspiration_pics .inspics_tap_small li.active {
   color: #f76d2b;
@@ -559,10 +648,52 @@ a {
   padding-top: 66px;
 }
 .inspiration_pics .ins_pics .dec_pic {
+  position: relative;
   margin-bottom: 2px;
   display: inline-block;
   vertical-align: top;
   width: 383px;
+}
+.inspiration_pics .ins_pics .dec_pic .ins_cover {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px 20px 103px 20px;
+  opacity: 0;
+}
+.inspiration_pics .ins_pics .dec_pic .ins_cover_in {
+  background: rgba(51, 51, 51, 0.6);
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border: 1px solid rgba(51, 51, 51, 0.4);
+}
+.inspiration_pics .ins_pics .dec_pic .ins_cover_in::before {
+  position: absolute;
+  left: -19px;
+  top: 20px;
+  content: "＋";
+  width: 40px;
+  height: 40px;
+  color: #fff;
+  text-align: center;
+  line-height: 40px;
+  background: rgba(51, 51, 51, 0.9);
+}
+.inspiration_pics .ins_pics .dec_pic .ins_cover_in p {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  margin-top: -10px;
+  line-height: 20px;
+  font-size: 14px;
+  color: #fff;
 }
 .inspiration_pics .ins_pics img {
   max-width: 100%;
@@ -581,10 +712,16 @@ a {
   height: 0;
   border-top: 1px solid #000;
 }
+.inspiration_pics .ins_show_bar li {
+  display: none;
+}
+.inspiration_pics .ins_show_bar li.active {
+  display: block;
+}
 .inspiration_pics .more_pics {
   width: 383px;
   height: 48px;
-  margin: 0 auto;
+  margin: 30px auto;
   background-color: #333;
 }
 .inspiration_pics .more_pics a {
@@ -622,14 +759,21 @@ a {
   color: #888;
 }
 .strategy_decorate .strategy_detail .str_det .detail_infos li {
+  position: relative;
   height: 30px;
   line-height: 30px;
-  list-style: disc;
   font-size: 14px;
+}
+.strategy_decorate .strategy_detail .str_det .detail_infos li::before {
+  content: "●";
+  color: #888;
 }
 .strategy_decorate .strategy_detail .str_det .detail_infos a {
   font-size: 14px;
   color: #333;
+}
+.strategy_decorate .strategy_detail .str_det .detail_infos a:hover {
+  color: #f76d2b;
 }
 .about_us .about_us_show {
   font-size: 0px;

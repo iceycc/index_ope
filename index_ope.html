@@ -124,15 +124,17 @@
             <!-- 选择装修  tab s-->
             <div class="choose_decorate_tab move_top">
                 <!-- 移入置顶页的弹出层 -->
-                <div class="cs_dev_info">
-                    <div class="dev_info_l">
-                        <h4>卫生间翻新 局部装修 全包套餐施工装修设计</h4>
-                        <p>全屋主材辅料，全屋家具家电，全屋窗帘及灯具，风格背景墙，施工安装全包，性价比超高。全屋主材辅料，屋主材辅料，全屋家具屋主材辅料全屋主材辅料屋窗帘及灯具，全屋家具家电，全屋窗帘及灯具，风格背景墙，全屋家具家电，全屋窗帘及灯具施工安装全包，性价比超...</p>
-                    </div>
-                    <div class="dev_info_r">
-                        <div class="pice">￥
-                            <span>606</span>/m²</div>
-                        <p>北京生活家装饰工程有限公司</p>
+                <div class="cs_dec_cc">
+                    <div class="cs_dev_info">
+                        <div class="dev_info_l">
+                            <h4>卫生间翻新 局部装修 全包套餐施工装修设计</h4>
+                            <p>全屋主材辅料，全屋家具家电，全屋窗帘及灯具，风格背景墙，施工安装全包，性价比超高。全屋主材辅料，屋主材辅料，全屋家具屋主材辅料全屋主材辅料屋窗帘及灯具，全屋家具家电，全屋窗帘及灯具，风格背景墙，全屋家具家电，全屋窗帘及灯具施工安装全包，性价比超...</p>
+                        </div>
+                        <div class="dev_info_r">
+                            <div class="pice">￥
+                                <span>606</span>/m²</div>
+                            <p>北京生活家装饰工程有限公司</p>
+                        </div>
                     </div>
                 </div>
                 <ul class="cs_dec_content">
@@ -197,21 +199,41 @@
                         <div class="dec_note">
                             <ul>
                                 <li>
+                                    <!-- 对比图片 -->
                                     <div class="dec_main_db">
                                         <div class="dec_img dec_img_l">
                                             <div class="dec_img_bor">
                                                 <img class="lazy" src="./img/main-img/ws-temp14.jpg">
                                             </div>
-                                            <p>装修前</p>
+                                            <p class="bf">装修前</p>
                                         </div>
+                                        <div class="line"></div>
                                         <div class="dec_img dec_img_r">
                                             <div class="dec_img_bor">
                                                 <img class="lazy" src="./img/main-img/ws-temp14.jpg">
                                             </div>
-                                            <p>装修后</p>
+                                            <p class="af">装修后</p>
+                                        </div>
+                                        <!-- 移入遮罩层 -->
+                                        <div class="dec_cover">
+                                            <div class="cover_info">
+                                                <div class="manager_pic">
+                                                    <img src="./img/touxiang.jpg" alt="">
+                                                </div>
+                                                <div class="manager_info">
+                                                    <p>管家：
+                                                        <span>文丑</span>
+                                                    </p>
+                                                    <p>
+                                                        <i>90</i>m² ·
+                                                        <i>半包</i> ·
+                                                        <i>3万</i>
+                                                    </p>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-
+                                    <!-- 描述信息 -->
                                     <div class="dec_mes">
                                         <div class="dec_mes_title">
                                             <span>开工仪式</span>
@@ -220,6 +242,9 @@
                                         </div>
                                         <p class="dec_mes_detail">对于初次接触装修的业主来说，房子装修绝对是一个不小的考验。装修流程如此之多，而且装修也要严格控制。</p>
                                     </div>
+
+
+
                                 </li>
                                 <li>
                                     <div class="dec_main_db">
@@ -227,13 +252,33 @@
                                             <div class="dec_img_bor">
                                                 <img class="lazy" src="./img/main-img/ws-temp14.jpg">
                                             </div>
-                                            <p>装修前</p>
+                                            <p class="bf">装修前</p>
                                         </div>
+                                        <div class="line"></div>
+
                                         <div class="dec_img dec_img_r">
                                             <div class="dec_img_bor">
                                                 <img class="lazy" src="./img/main-img/ws-temp14.jpg">
                                             </div>
-                                            <p>装修后</p>
+                                            <p class="af">装修后</p>
+                                        </div>
+                                        <!-- 移入遮罩层 -->
+                                        <div class="dec_cover">
+                                            <div class="cover_info">
+                                                <div class="manager_pic">
+                                                    <img src="./img/touxiang.jpg" alt="">
+                                                </div>
+                                                <div class="manager_info">
+                                                    <p>管家：
+                                                        <span>文丑</span>
+                                                    </p>
+                                                    <p>
+                                                        <i>90</i>m² ·
+                                                        <i>半包</i> ·
+                                                        <i>3万</i>
+                                                    </p>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="dec_mes">
@@ -630,9 +675,15 @@
             <div class="ins_pics_tap move_top">
                 <!-- 大的分类tap -->
                 <ul class="inspics_tab_button wrapper1220">
-                    <li class="inspics_list1 active">搜风格</li>
-                    <li class="inspics_list2">搜面积</li>
-                    <li class="inspics_list3">搜空间</li>
+                    <li class="inspics_list active">搜风格
+                        <i class="line"></i>
+                    </li>
+                    <li class="inspics_list">搜面积
+                        <i class="line"></i>
+                    </li>
+                    <li class="inspics_list">搜空间
+                        <i class="line"></i>
+                    </li>
                 </ul>
                 <!-- 小的分类tap -->
                 <ul class="inspics_tap_small">
@@ -652,15 +703,23 @@
                     <i>/</i>
                     <li>日式</li>
                 </ul>
-                <ol>
+                <ol class="ins_show_bar wrapper1220">
                     <!-- 搜风格 -->
-                    <li class="inspics_list search_style active">
+                    <li class="ins_show_list search_style active">
                         <div id="masonry" class="ins_pics container-fluid">
                             <div class="dec_pic">
                                 <img src="./img/pubu (1).jpg" alt="">
                                 <div class="dec_pic_info">
                                     <h4 class="dec_pic_title">金都杭城现代三居</h4>
                                     <div class="line"></div>
+                                </div>
+                                <!-- 遮罩层 -->
+                                <div class="ins_cover">
+                                    <div class="ins_cover_in">
+                                        <p>面积：
+                                            <i>98m²</i> | 造价：
+                                            <i>8万</i>/全包</p>
+                                    </div>
                                 </div>
 
                             </div>
@@ -669,6 +728,14 @@
                                 <div class="dec_pic_info">
                                     <h4 class="dec_pic_title">金都杭城现代三居</h4>
                                     <div class="line"></div>
+                                    <!-- 遮罩层 -->
+                                    <div class="ins_cover">
+                                        <div class="ins_cover_in">
+                                            <p>面积：
+                                                <i>98m²</i> | 造价：
+                                                <i>8万</i>/全包</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="dec_pic">
@@ -676,6 +743,14 @@
                                 <div class="dec_pic_info">
                                     <h4 class="dec_pic_title">金都杭城现代三居</h4>
                                     <div class="line"></div>
+                                    <!-- 遮罩层 -->
+                                    <div class="ins_cover">
+                                        <div class="ins_cover_in">
+                                            <p>面积：
+                                                <i>98m²</i> | 造价：
+                                                <i>8万</i>/全包</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="dec_pic">
@@ -683,6 +758,14 @@
                                 <div class="dec_pic_info">
                                     <h4 class="dec_pic_title">金都杭城现代三居</h4>
                                     <div class="line"></div>
+                                    <!-- 遮罩层 -->
+                                    <div class="ins_cover">
+                                        <div class="ins_cover_in">
+                                            <p>面积：
+                                                <i>98m²</i> | 造价：
+                                                <i>8万</i>/全包</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="dec_pic">
@@ -690,6 +773,14 @@
                                 <div class="dec_pic_info">
                                     <h4 class="dec_pic_title">金都杭城现代三居</h4>
                                     <div class="line"></div>
+                                    <!-- 遮罩层 -->
+                                    <div class="ins_cover">
+                                        <div class="ins_cover_in">
+                                            <p>面积：
+                                                <i>98m²</i> | 造价：
+                                                <i>8万</i>/全包</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="dec_pic">
@@ -697,6 +788,14 @@
                                 <div class="dec_pic_info">
                                     <h4 class="dec_pic_title">金都杭城现代三居</h4>
                                     <div class="line"></div>
+                                    <!-- 遮罩层 -->
+                                    <div class="ins_cover">
+                                        <div class="ins_cover_in">
+                                            <p>面积：
+                                                <i>98m²</i> | 造价：
+                                                <i>8万</i>/全包</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="dec_pic">
@@ -704,6 +803,14 @@
                                 <div class="dec_pic_info">
                                     <h4 class="dec_pic_title">金都杭城现代三居</h4>
                                     <div class="line"></div>
+                                    <!-- 遮罩层 -->
+                                    <div class="ins_cover">
+                                        <div class="ins_cover_in">
+                                            <p>面积：
+                                                <i>98m²</i> | 造价：
+                                                <i>8万</i>/全包</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="dec_pic">
@@ -711,6 +818,14 @@
                                 <div class="dec_pic_info">
                                     <h4 class="dec_pic_title">金都杭城现代三居</h4>
                                     <div class="line"></div>
+                                    <!-- 遮罩层 -->
+                                    <div class="ins_cover">
+                                        <div class="ins_cover_in">
+                                            <p>面积：
+                                                <i>98m²</i> | 造价：
+                                                <i>8万</i>/全包</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="dec_pic">
@@ -718,6 +833,14 @@
                                 <div class="dec_pic_info">
                                     <h4 class="dec_pic_title">金都杭城现代三居</h4>
                                     <div class="line"></div>
+                                    <!-- 遮罩层 -->
+                                    <div class="ins_cover">
+                                        <div class="ins_cover_in">
+                                            <p>面积：
+                                                <i>98m²</i> | 造价：
+                                                <i>8万</i>/全包</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="dec_pic">
@@ -725,6 +848,14 @@
                                 <div class="dec_pic_info">
                                     <h4 class="dec_pic_title">金都杭城现代三居</h4>
                                     <div class="line"></div>
+                                    <!-- 遮罩层 -->
+                                    <div class="ins_cover">
+                                        <div class="ins_cover_in">
+                                            <p>面积：
+                                                <i>98m²</i> | 造价：
+                                                <i>8万</i>/全包</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="dec_pic">
@@ -732,6 +863,14 @@
                                 <div class="dec_pic_info">
                                     <h4 class="dec_pic_title">金都杭城现代三居</h4>
                                     <div class="line"></div>
+                                    <!-- 遮罩层 -->
+                                    <div class="ins_cover">
+                                        <div class="ins_cover_in">
+                                            <p>面积：
+                                                <i>98m²</i> | 造价：
+                                                <i>8万</i>/全包</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="dec_pic">
@@ -739,6 +878,14 @@
                                 <div class="dec_pic_info">
                                     <h4 class="dec_pic_title">金都杭城现代三居</h4>
                                     <div class="line"></div>
+                                    <!-- 遮罩层 -->
+                                    <div class="ins_cover">
+                                        <div class="ins_cover_in">
+                                            <p>面积：
+                                                <i>98m²</i> | 造价：
+                                                <i>8万</i>/全包</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
 
@@ -746,9 +893,9 @@
                         </div>
                     </li>
                     <!-- 搜面积 -->
-                    <li class="inspics_list search_area"></li>
+                    <li class="ins_show_list search_area"></li>
                     <!-- 搜空间 -->
-                    <li class="inspics_list search_room"></li>
+                    <li class="ins_show_list search_room"></li>
 
                 </ol>
                 <div class="more_pics">

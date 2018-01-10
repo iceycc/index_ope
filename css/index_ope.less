@@ -11,6 +11,10 @@
     margin: 0;
     padding: 0;
 }
+
+i,b,s,u{
+    font-style:normal
+}
 // *, *:before, *:after {
 //     -moz-box-sizing: border-box;
 //     -webkit-box-sizing: border-box;
@@ -376,12 +380,26 @@ a{
             ul{
                 width: 1220px;
                 padding-top:50px;
+                font-size: 0;
                 li{
                     display: inline-block;
                     vertical-align: middle;
                     width: 536px;
+                    &:first-child{
+                        margin-right: 50px;
+                    }
+                }
+                .line{
+                    display: inline-block;
+                    vertical-align: bottom;
+                    height: 20px;
+                    margin-left:7px;
+                    margin-right:7px;
+                    margin-bottom: 15px;
+                    border-left:1px dashed #999;
                 }
                 .dec_main_db{
+                    position: relative;
                     display: inline-block;
                     *display: inline;
                     *zoom: 1;
@@ -392,7 +410,6 @@ a{
                         *zoom: 1;
                         width: 260px;
                         vertical-align: middle;
-                        border: 1px solid #ededed;
 
                         img{
                             width: 100%;
@@ -403,30 +420,83 @@ a{
                             line-height: 50px;
                             color: #999;
                             font-size: 18px;
-                            text-align: center;
                             height: 50px;
+                            &.bf{
+                                text-align: right;
+                            }
+                            &.af{
+                                text-align: left;
+                            }
                         }
 
                     }
                     .dec_img_bor{
-                        display: inline-block;
-                        width: 100%;
-                        overflow: hidden;
+                            display: inline-block;
+                            width: 100%;
+                            overflow: hidden;
+
                     }
-                    .dec_img_l,.dec_img_r{                  
-                        
+
+                    .dec_img_l,.dec_img_r{                      
                         vertical-align: middle;
                         overflow: hidden;
                         cursor: pointer;
-                        img:hover {
-                            -webkit-transform: scale(1.1);
-                            transform: scale(1.1);
-                        }
+                        // img:hover {
+                        //     -webkit-transform: scale(1.1);
+                        //     transform: scale(1.1);
+                        // }
                     }
 
                 }
-
+                // 遮罩层
+                .dec_cover{
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 100%;
+                    height: 262px;
+                    background:RGBA(51,51,51,0.8);
+                    z-index: 4;
+                    font-size: 0;
+                    opacity: 0;
+                    .cover_info{
+                        display: inline-block;
+                        width: 220px;
+                        height: 92px;
+                        margin-top:82px;
+                        border-top:1px solid #fff;
+                        border-bottom:1px solid #fff;
+                        color:#fff;
+                        font-size:16px; 
+                        line-height:28px;                        
+                    }
+                    .manager_pic{
+                        display: inline-block;
+                        vertical-align: middle;
+                        width: 60px;
+                        height:60px;
+                        // margin-left: 10px;
+                        margin-top:16px;
+                        border-radius: 30px;
+                        border:1px solid #fff;
+                        text-align: left;
+                        overflow: hidden;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                    .manager_info{
+                        display: inline-block;
+                        vertical-align: top;
+                        padding-left:10px;
+                        padding-top:20px;                        
+                    }
                 }
+                // .dec_cover:hover{
+                //     opacity: 1;
+                // }
+            }
                 .dec_mes{
                     text-align: center;
     
@@ -596,29 +666,58 @@ a{
 .inspiration_pics{
     width: 100%;
     // 
-    height:2100px;
+    height:2150px;
+    // 上部导航
     .inspics_tab_button{
          padding-top:66px;                
         text-align: center;
         li{
+            position: relative;
             display: inline-block;
             width: 120px;
             height: 24px;
             font-size: 18px;
             color:#333;
+            cursor: pointer;
             &:nth-child(2){
                 border-left:1px dashed #333;
                 border-right: 1px dashed #333;
             }
+            &.active{
+                color:#000;
+                i{
+                    position: absolute;
+                    left: 50%;
+                    margin-left:-30px;
+                    bottom:-1px;
+                    width: 60px;
+                    height: 2px;
+                    background: #000;
+                    &::after{
+                        position: absolute;
+                        display: inline-block;
+                        left:50%;
+                        top:2px;
+                        margin-left: -4px;
+                        content: "";
+                        width: 0;
+                        height: 0;
+                        border: 4px solid #FFF;
+                        border-top:4px solid #000; 
+                    }
+                }
+            }
         }
         
     }  
+    // 小导航
     .inspics_tap_small{
         text-align: center;
         margin-top:23px;
         li{
             display: inline-block;
             font-size:14px;
+            cursor: pointer;
             &.active{
                 color:#f76d2b;
             }
@@ -628,18 +727,64 @@ a{
         }
     } 
 
-    // 灵感图库 tap
+    // 灵感图库 瀑布流展示
     .ins_pics{
         margin: 0 auto;
         width: 1220px;
         padding-top:66px;
             .dec_pic{
+                position: relative;
                 margin-bottom: 2px;
                 // float: left;
                 display: inline-block;
                 vertical-align: top;
                 // font-size: 0px;
                 width: 383px;
+                .ins_cover{
+                    -moz-box-sizing: border-box;
+                    -webkit-box-sizing: border-box;
+                    box-sizing: border-box;                  
+                    position: absolute;
+                    left:0;
+                    top:0;
+                    width: 100%;
+                    height: 100%;
+                    padding:20px 20px 103px 20px;    
+                    opacity: 0;                                 
+                    
+                }
+                .ins_cover_in{
+                    background: RGBA(51,51,51,0.6);
+                    position: relative;
+                    // background: red;
+                    width: 100%;
+                    height: 100%;
+                    border: 1px solid RGBA(51,51,51,0.4);
+                    &::before{
+                        position: absolute;
+                        left: -19px;
+                        top:20px;
+                        content: "＋";
+                        width: 40px;
+                        height:40px;
+                        color:#fff;
+                        text-align: center;
+                        line-height: 40px;
+                        background: RGBA(51,51,51,0.9);
+                    }
+                    p{
+                        position: absolute;
+                        top:50%;
+                        width: 100%;
+                        text-align: center;
+                        margin-top:-10px;
+                        line-height: 20px;
+                        font-size: 14px;
+                        color:#fff;
+                    }
+                }
+                
+    
             }
             img{
                 max-width:100%;
@@ -660,23 +805,37 @@ a{
                 border-top:1px solid #000;
             }
 
-        }
-        .more_pics{
-            width: 383px;
-            height: 48px;
-            margin: 0 auto;
-            background-color: #333;
-            a{
-                display: inline-block;
-                font-size: 16px;
-                width: 100%;
-                height:100%;
-                color:#fff;
-                text-align: center;
-                line-height: 48px;
-            }
+    }
+
+
+    // ol
+    .ins_show_bar{
+      li{
+          display: none;
+          &.active{
+            display: block;
+          }
+      }  
+    }
+
+
+    // 点击更多按钮
+    .more_pics{
+        width: 383px;
+        height: 48px;
+        margin: 30px auto;
+        background-color: #333;
+        a{
+            display: inline-block;
+            font-size: 16px;
+            width: 100%;
+            height:100%;
+            color:#fff;
+            text-align: center;
+            line-height: 48px;
         }
     }
+}
 
 
     // 装修攻略
@@ -709,17 +868,22 @@ a{
               }
             .detail_infos{
                 li{
+                    position: relative;
                     height: 30px;
                     line-height: 30px;
-
-                    list-style: disc;
-                    font-size:14px;
-
-
+                    // list-style: disc;
+                    font-size:14px;                    
+                    &::before{
+                        content: "●";
+                        color:#888;
+                    }
                 }
                   a{
                       font-size:14px;
                       color:#333;
+                      &:hover{
+                          color:#f76d2b;
+                      }
                   }
               }        
               

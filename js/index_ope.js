@@ -7,7 +7,7 @@ function clickRes() {
         $(this).parents('.owner_tab').find('.owner_tab_content li.owner_list').eq($(this).index()).addClass('active').siblings('li.owner_list').removeClass('active');
     });
 }
-// 装修前轮播
+// 选装修 叠加轮播
 function beforTab() {
     function sinderAddClass(arr) {
         $('.cs_dec_content li').attr('class', '')
@@ -52,8 +52,6 @@ function beforTab() {
     });
 }
 
-
-
 // 方法调用
 function pluginUnit() {
     //图片懒加载
@@ -84,6 +82,46 @@ function pluginUnit() {
 }
 
 
+// 移入图片 显示遮罩层
+function showCover(ele){
+    $(ele).mouseenter(function(){
+        $(this).stop(true, true).animate({opacity:1})
+    });
+    $(ele).mouseleave(function(){
+        $(this).stop(true, true).animate({opacity:0})
+    });
+}
+
+
+// 选装修 轮播 弹出层
+function csShowCover(){
+    
+    $(".cs_dec_cc").on("mouseenter",function(){
+        console.log(1)
+        $(".cs_dev_info").stop(true, true).fadeIn(600)
+    })
+    .on("mouseleave",function(){
+        $(".cs_dev_info").stop(true, true).fadeOut(600)       
+    })
+}
+
+// 灵感图库 tap切换
+function insTapTop(){
+    $(".inspics_tab_button .inspics_list").on("click",function(){
+        $(this).addClass("active").siblings().removeClass("active");
+        $(this).parent().siblings(".ins_show_bar").find('.ins_show_list').eq($(this).index()).addClass('active').siblings('li.ins_show_list').removeClass('active');
+        
+    })
+}
+// 小tap切换
+function insTapSmall(){
+    $(".inspics_tap_small li").on("click",function(){
+        $(this).addClass("active").siblings().removeClass("active");
+        
+    })
+}
+
+
 $(function () {
     var $container = $('#masonry');
     $container.imagesLoaded(function () {
@@ -93,7 +131,12 @@ $(function () {
             isAnimated: true,
         });
     });
-    clickRes()
-    beforTab()
-    pluginUnit()
+    clickRes();
+    beforTab();
+    pluginUnit();
+    showCover(".dec_cover");
+    showCover(".ins_cover");
+    csShowCover();
+    insTapTop();
+    insTapSmall()
 })
