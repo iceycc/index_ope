@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    
+ .singup_city span {
+    background-position: -47px -78px;
+}
+.singup_city .selectBox {
+    display: inline-block;
+    width: 185px;
+    height: 100%;
+    vertical-align: middle;
+    font-size: 16px;
+    position: relative;
+}
+
+.selectBox{
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.sing_up .select_txt,.sing_up  .select_txt_hover {
+    background: url(../../base/img/common_v1.png) no-repeat 158px 29px;
+}
+
+.sing_up .select_txt_open {
+    background: url(../../base/img/common_v1.png) no-repeat 158px -13px;
+}
+
+    
+    </style>
+</head>
+<body>
+    <div class="sing_up">
+        <div class="sing_form_cont singup_city">
+            <div class="selectBox" id="select_2">
+                <div class="select_txt">1</div>
+                <select style="display:none">
+                    <option value="0">选择您所在城市</option>
+                    <option value="1">城市1</option>
+                    <option value="2">城市2</option>
+                </select>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./base/js/jquery-1.8.3.min.js"></script>
+<script src="./base/js/select_new.js"></script>
+
+</html>

@@ -594,7 +594,7 @@
 /*选装修 tab s*/
 .choose_decorate_tab{
     position: relative;
-    width: 78%;
+    width: 1800px;
     margin:0 auto;
     height: 800px;
 }
@@ -608,7 +608,7 @@
 
 }
 .be_de_list{
-    width:66.6%;
+    width:1200px;
     height:646px;
     /* border:1px solid #e1e1e1; */
     position: absolute;
@@ -649,7 +649,7 @@
     z-index:3;
 }
 .cs_dec_l1,.cs_dec_r1{
-    width:54.4%;
+    width:980px;
     height:525px;
     z-index:2;
     margin-top:-210px;
@@ -674,13 +674,20 @@
     z-index: 10;
     position: absolute;
     top: 50%;
-    width: 3.3%;
-    height: 75px;
-    margin-top: -23px;
-    opacity: 0.3;
-    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
-    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
-    background: url(../img/main-img/contrast_silder.png) no-repeat;
+    width: 60px;
+    height: 120px;
+    background: #ccc;
+
+}
+.cs_dec_button i{
+    display:inline-block;
+    *display:inline;
+    *zoom:1;
+    font-size:50px;
+    text-align:center;
+    line-height:120px;
+    color:#fff;
+
 }
 .cs_dec_button .left_minu{
     left:0;
@@ -691,9 +698,7 @@
     background-position:0 0;
 }
 .cs_dec_button .left_minu:hover,.cs_dec_button .right_minu:hover{
-    opacity:1;
-    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
-    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    background: #666;
 }
 
  /* 移入的弹出层 */
@@ -779,3 +784,67 @@
 }
 /*选装修 tab e*/
 /* 选装修 E */
+
+
+
+
+/* .selectBox {
+    display: inline-block;
+    width: 185px;
+    height: 100%;
+    vertical-align: middle;
+    font-size: 16px;
+    position: relative;
+}
+.selectBox{
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+#select_options_1 {
+    background: #fff;
+    position: absolute;
+    left: -45px;
+    top: 59px;
+    width: 230px;
+    text-align: left;
+    z-index: 3;
+}
+
+.select_options {
+    border: 1px solid #eee;
+    max-height: 240px;
+    overflow: auto;
+}
+
+.select_options li {
+    cursor: pointer;
+    text-indent: 44px;
+    height: 40px;
+    line-height: 40px;
+
+}
+
+.select_options li:hover {
+    background: #f1f1f1;
+}
+
+#select_txt_1 {
+    -webkit-transition: 0.2s all ease;
+    transition: 0.2s all ease;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.select_txt,.select_txt_hover {
+    background: url(../../base/img/common_v1.png) no-repeat 158px 29px;
+}
+
+.select_txt_open {
+    background: url(../../base/img/common_v1.png) no-repeat 158px -13px;
+} */
+
+/*city select e*/

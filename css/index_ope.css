@@ -24,7 +24,8 @@ h6 {
   font-family: "Microsoft YaHei", "STHeitiSC-Medium", "Droid Sans Fallback";
   min-width: 1220px;
 }
-input {
+input,
+select {
   font-family: "Microsoft YaHei", "STHeitiSC-Medium", "Droid Sans Fallback";
   outline: none;
   border: none;
@@ -125,6 +126,11 @@ a {
 }
 .banner .login .login_box input {
   width: 123px;
+  height: 38px;
+  padding-left: 17px;
+}
+.banner .login .login_box .d_select {
+  width: 140px;
   height: 38px;
   padding-left: 17px;
 }
@@ -506,7 +512,7 @@ a {
 .choose_decorate .dec_join_bar {
   width: 1191px;
   height: 72px;
-  margin-top: 34px;
+  margin-top: 38px;
   padding-top: 28px;
   padding-left: 29px;
   background: #333;
@@ -558,6 +564,20 @@ a {
   padding-right: 10px;
   color: #fff;
   background: rgba(0, 0, 0, 0);
+}
+.choose_decorate .dec_join_bar .right_login_box .dec_select {
+  font-size: 14px;
+  height: 40px;
+  width: 100%;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #fff;
+  padding-left: 20px;
+  background: rgba(0, 0, 0, 0);
+}
+.choose_decorate .dec_join_bar .right_login_box .dec_select option {
+  color: #333;
 }
 .choose_decorate .dec_join_bar .right_login_box div {
   position: relative;
